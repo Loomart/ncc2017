@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0231C496-19A2-4DBC-8E9E-7FB5594F0E21}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>NCC2015.My.MyApplication</StartupObject>
+    <RootNamespace>NCC2015</RootNamespace>
+    <AssemblyName>NCC2015</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>C:\Users\luisf\Desktop\NCC\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en</TargetCulture>
+    <WebPage>publish.htm</WebPage>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>NCC2015.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>NCC2015.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ncc.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>NCC2015.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>NCC2015.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>NCC2015.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>NCC2015.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E5ACBEE53E8E4C675DCA8427307B86C427FD1849</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>NCC2015_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'prod|AnyCPU'">
+    <OutputPath>bin\prod\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'prod|x64'">
+    <OutputPath>bin\x64\prod\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'prod|x86'">
+    <OutputPath>bin\x86\prod\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Devart.Data, Version=5.0.1555.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="Devart.Data.MySql, Version=8.6.763.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_timetable.Designer.vb">
+      <DependentUpon>add_timetable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_timetable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="class_list.Designer.vb">
+      <DependentUpon>class_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="class_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="configCard.Designer.vb">
+      <DependentUpon>configCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="configCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="declare.vb" />
+    <Compile Include="doPayment.Designer.vb">
+      <DependentUpon>doPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="doPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ficha_inscricao_form.Designer.vb">
+      <DependentUpon>ficha_inscricao_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ficha_inscricao_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="globalFunctions.vb" />
+    <Compile Include="list_classes.Designer.vb">
+      <DependentUpon>list_classes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="list_classes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="medic.vb" />
+    <Compile Include="medic_form.Designer.vb">
+      <DependentUpon>medic_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="medic_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ncc_2015DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ncc_2015DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ncc_2015DataSet.vb">
+      <DependentUpon>ncc_2015DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="payment.vb" />
+    <Compile Include="search_partner.Designer.vb">
+      <DependentUpon>search_partner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="search_partner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="timetable.vb" />
+    <Compile Include="valida_entrada.Designer.vb">
+      <DependentUpon>valida_entrada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="valida_entrada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="altera_socio.Designer.vb">
+      <DependentUpon>altera_socio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="altera_socio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adiciona_socio_form.Designer.vb">
+      <DependentUpon>adiciona_socio_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adiciona_socio_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="classes_form.Designer.vb">
+      <DependentUpon>classes_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="classes_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="database_manager.vb" />
+    <Compile Include="despesas_proveitos_form.Designer.vb">
+      <DependentUpon>despesas_proveitos_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="despesas_proveitos_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_form.Designer.vb">
+      <DependentUpon>main_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pagamentos_form.Designer.vb">
+      <DependentUpon>pagamentos_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pagamentos_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="partner.vb" />
+    <Compile Include="user.vb" />
+    <Compile Include="view_timetable.Designer.vb">
+      <DependentUpon>view_timetable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_timetable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="add_timetable.resx">
+      <DependentUpon>add_timetable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="class_list.resx">
+      <DependentUpon>class_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="configCard.resx">
+      <DependentUpon>configCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doPayment.resx">
+      <DependentUpon>doPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ficha_inscricao.rdlc" />
+    <EmbeddedResource Include="ficha_inscricao_form.resx">
+      <DependentUpon>ficha_inscricao_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="list_classes.resx">
+      <DependentUpon>list_classes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medic_form.resx">
+      <DependentUpon>medic_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_partner.resx">
+      <DependentUpon>search_partner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="valida_entrada.resx">
+      <DependentUpon>valida_entrada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="altera_socio.resx">
+      <DependentUpon>altera_socio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adiciona_socio_form.resx">
+      <DependentUpon>adiciona_socio_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="classes_form.resx">
+      <DependentUpon>classes_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="despesas_proveitos_form.resx">
+      <DependentUpon>despesas_proveitos_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_form.resx">
+      <DependentUpon>main_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pagamentos_form.resx">
+      <DependentUpon>pagamentos_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_timetable.resx">
+      <DependentUpon>view_timetable.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\logo_lumart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\logo_ncc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\add_socio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\change_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\ficha_inscricao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\classes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\despesas_proveito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\pagamentos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\invalido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\administrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\sair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Exit-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Save-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Delete-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Clean-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Remove User-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\acept-128.png" />
+    <None Include="NCC2015_1_TemporaryKey.pfx" />
+    <None Include="NCC2015_TemporaryKey.pfx" />
+    <None Include="Resources\blankAvatart.png" />
+    <None Include="Resources\Nurse Female-24.png" />
+    <None Include="ncc_2015DataSet.xsc">
+      <DependentUpon>ncc_2015DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ncc_2015DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ncc_2015DataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ncc_2015DataSet.xss">
+      <DependentUpon>ncc_2015DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Search-24.png" />
+    <None Include="Resources\Delete-24.png" />
+    <None Include="Resources\View Details-24.png" />
+    <None Include="Resources\Parent Guardian-24.png" />
+    <None Include="Resources\View File-24.png" />
+    <None Include="Resources\Remove User Male-24.png" />
+    <None Include="Resources\Save-24.png" />
+    <None Include="Resources\Close Window-24.png" />
+    <None Include="Resources\Circled Right-24.png" />
+    <None Include="Resources\Circled Left-24.png" />
+    <None Include="Resources\Circled Left 2-24.png" />
+    <None Include="Resources\Circled Right 2-24.png" />
+    <None Include="Resources\Refresh-24.png" />
+    <None Include="Resources\Pacifier-24.png" />
+    <None Include="Resources\Save the Children-24.png" />
+    <None Include="Resources\Groom-24.png" />
+    <None Include="Resources\Hospital 2-24.png" />
+    <None Include="Resources\H-24.png" />
+    <None Include="Resources\B-24.png" />
+    <None Include="Resources\C-24.png" />
+    <None Include="Resources\A-24.png" />
+    <None Include="Resources\M-24.png" />
+    <None Include="Resources\Medal First Place-24.png" />
+    <None Include="Resources\Overtime-24.png" />
+    <None Include="Resources\User Groups-24.png" />
+    <None Include="Resources\Go-24.png" />
+    <None Include="Resources\Previous-24.png" />
+    <None Include="Resources\Next-24.png" />
+    <None Include="Resources\Last-24.png" />
+    <None Include="Resources\First-24.png" />
+    <None Include="icons\back.png" />
+    <None Include="icons\delete25.png" />
+    <None Include="icons\deleteRow.png" />
+    <None Include="icons\add_class.png" />
+    <None Include="icons\Euro-32.png" />
+    <Content Include="icons\forbid-128.png" />
+    <None Include="icons\Insert Card-24.png" />
+    <Content Include="icons\ncc.ico" />
+    <None Include="icons\next.png" />
+    <Content Include="MasterCom.dll" />
+    <Content Include="MasterRD.dll" />
+    <Content Include="ncc.ico" />
+    <None Include="icons\timetable-48.png" />
+    <None Include="icons\viewTimetable-32.png" />
+    <None Include="Resources\blank.png" />
+    <None Include="Resources\acept.bmp" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
