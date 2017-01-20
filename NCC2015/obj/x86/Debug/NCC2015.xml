@@ -1,0 +1,566 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NCC2015
+</name>
+</assembly>
+<members>
+<member name="T:NCC2015.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources._next">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.A_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.acept">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.add_class">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.add_socio">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.administrar">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.B_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.back">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.blank">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.C_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.change_user">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Circled_Left_2_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Circled_Left_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Circled_Right_2_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Circled_Right_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.classes">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Clean_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Close_Window_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Delete_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Delete_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.delete25">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.deleteRow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.despesas_proveito">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Euro_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Exit_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.ficha_inscricao">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.First_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.forbid">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Go_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Groom_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.H_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Hospital_2_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Insert_Card_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.invalido">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Last_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.login">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.logo_lumart">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.logo_ncc">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.M_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Medal_First_Place_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Next_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Nurse_Female_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Overtime_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Pacifier_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.pagamentos">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Parent_Guardian_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Previous_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Refresh_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Remove_User_Male_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.sair">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Save_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Save_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Save_the_Children_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.Search_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.timetable_48">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.User_Groups_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.View_Details_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.View_File_24">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NCC2015.My.Resources.Resources.viewTimetable_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_imageDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_medicDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partnerDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partner_classDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partner_timetableDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_userDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_sysDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.partner_infoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partner_class1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partner_timetable1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_imageRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_medicRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partnerRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partner_classRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partner_timetableRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_userRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_sysRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.partner_infoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partner_class1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partner_timetable1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_imageRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_medicRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partnerRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partner_classRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partner_timetableRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_userRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_sysRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.partner_infoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partner_class1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_partner_timetable1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_imageTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_medicTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_partnerTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_partner_classTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_partner_timetableTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_userTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_sysTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.partner_infoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_partner_class1TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_partner_timetable1TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:NCC2015.ncc_2015DataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(NCC2015.ncc_2015DataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:NCC2015.ncc_2015DataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(NCC2015.ncc_2015DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:NCC2015.ncc_2015DataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(NCC2015.ncc_2015DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:NCC2015.ncc_2015DataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:NCC2015.ncc_2015DataSetTableAdapters.TableAdapterManager.UpdateAll(NCC2015.ncc_2015DataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

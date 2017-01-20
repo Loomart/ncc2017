@@ -1,0 +1,158 @@
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\bin\Release\NCC2015.exe.config
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\bin\Release\NCC2015.exe
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\bin\Release\NCC2015.pdb
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\bin\Release\NCC2015.xml
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\bin\Release\MySql.Data.Entity.EF6.dll
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\bin\Release\MySql.Fabric.Plugin.dll
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\bin\Release\MySql.Web.v20.dll
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\obj\Release\NCC2015.adiciona_socio_form.resources
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\obj\Release\NCC2015.altera_socio_form.resources
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\obj\Release\NCC2015.classes_form.resources
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\obj\Release\NCC2015.despesas_proveitos_form.resources
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\obj\Release\NCC2015.ficha_inscricao_form.resources
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\obj\Release\NCC2015.login_form.resources
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\obj\Release\NCC2015.main_form.resources
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\obj\Release\NCC2015.Resources.resources
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\obj\Release\NCC2015.pagamentos_form.resources
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\obj\Release\NCC2015.vbproj.GenerateResource.Cache
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\obj\Release\NCC2015.exe
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\obj\Release\NCC2015.xml
+C:\Users\Luis Manuel Figueira\Desktop\WIP\NCC2015\NCC2015\obj\Release\NCC2015.pdb
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\NCC2015.exe.config
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.exe
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.xml
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.pdb
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.vbprojResolveAssemblyReference.cache
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.add_timetable.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.class_list.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.ficha_inscricao_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.list_classes.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.search_partner.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.valida_entrada.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.altera_socio_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.adiciona_socio_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.classes_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.despesas_proveitos_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.login_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.main_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.Resources.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.pagamentos_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.view_timetable.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\NCC2015.vbproj.GenerateResource.Cache
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\RdlCompile.cache
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\obj\Release\RdlCompile.compiled
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\NCC2015.exe
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\NCC2015.pdb
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\NCC2015.xml
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\Devart.Data.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\Devart.Data.MySql.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\Devart.Data.MySql.Vs.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\EnvDTE.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\VSLangProj.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\VsWebSite.Interop.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\stdole.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\Devart.Data.MySql.xml
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\Microsoft.VisualStudio.Shell.Interop.xml
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\Microsoft.VisualStudio.OLE.Interop.xml
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\EnvDTE.xml
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\VSLangProj.xml
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\Microsoft.VisualStudio.TextManager.Interop.xml
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016\NCC2015\bin\Release\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\NCC2015.exe.config
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\NCC2015.exe
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\NCC2015.pdb
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\NCC2015.xml
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\Devart.Data.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\Devart.Data.MySql.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\MySql.Data.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\Devart.Data.MySql.xml
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\MySql.Data.xml
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\bin\Release\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.add_timetable.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.class_list.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.configCard.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.doPayment.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.ficha_inscricao_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.list_classes.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.medic_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.search_partner.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.valida_entrada.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.altera_socio_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.adiciona_socio_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.classes_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.despesas_proveitos_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.login_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.main_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.Resources.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.pagamentos_form.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.view_timetable.resources
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.vbproj.GenerateResource.Cache
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\RdlCompile.cache
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\RdlCompile.compiled
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.exe
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.xml
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.pdb
+C:\Users\luisf\Desktop\WIP\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.vbprojResolveAssemblyReference.cache
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\bin\Release\NCC2015.exe.config
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\bin\Release\NCC2015.exe.manifest
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\bin\Release\NCC2015.application
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\bin\Release\NCC2015.exe
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\bin\Release\NCC2015.pdb
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\bin\Release\NCC2015.xml
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.add_timetable.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.class_list.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.configCard.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.doPayment.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.ficha_inscricao_form.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.list_classes.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.medic_form.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.search_partner.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.valida_entrada.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.altera_socio_form.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.adiciona_socio_form.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.classes_form.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.despesas_proveitos_form.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.login_form.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.main_form.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.Resources.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.pagamentos_form.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.view_timetable.resources
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.vbproj.GenerateResource.Cache
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\RdlCompile.cache
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\RdlCompile.compiled
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.exe.manifest
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.application
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.exe
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.xml
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.pdb
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\obj\Release\NCC2015.vbprojResolveAssemblyReference.cache
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\bin\Release\Devart.Data.dll
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\bin\Release\Devart.Data.MySql.dll
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\bin\Release\MySql.Data.dll
+C:\Users\luisf\Desktop\WIP31102016\NCC\NCC2016_v2.0\NCC2015\bin\Release\Devart.Data.MySql.xml
