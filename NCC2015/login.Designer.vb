@@ -132,7 +132,7 @@ Partial Class login_form
         Me.MaximizeBox = False
         Me.Name = "login_form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Loomart - SocGest | Login"
+        Me.Text = "Loomart - SocGest 2017| Login"
         CType(Me.sair_fake_login_btn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
