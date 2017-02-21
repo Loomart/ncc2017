@@ -93,7 +93,7 @@ Partial Class main_form
         Me.depesas_proveitos_btn.Name = "depesas_proveitos_btn"
         Me.depesas_proveitos_btn.Size = New System.Drawing.Size(62, 55)
         Me.depesas_proveitos_btn.TabIndex = 6
-        Me.mainToolTip.SetToolTip(Me.depesas_proveitos_btn, "Despesas / Proveitos")
+        Me.mainToolTip.SetToolTip(Me.depesas_proveitos_btn, "Despesas")
         Me.depesas_proveitos_btn.UseVisualStyleBackColor = False
         '
         'pagamentos_btn

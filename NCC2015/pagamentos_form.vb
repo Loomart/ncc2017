@@ -20,4 +20,16 @@
         main.Show()
     End Sub
 
+    Private Sub Loo_paymentBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
+        Me.Validate()
+        Me.Loo_paymentBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.Ncc_2015DataSet)
+
+    End Sub
+
+    Private Sub pagamentos_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'Ncc_2015DataSet.loo_payment' table. You can move, or remove it, as needed.
+        Me.Loo_paymentTableAdapter.Fill(Me.Ncc_2015DataSet.loo_payment)
+
+    End Sub
 End Class

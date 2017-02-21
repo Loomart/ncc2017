@@ -42,6 +42,11 @@ NCC2015
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:NCC2015.My.Resources.Resources.Add_List_32">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:NCC2015.My.Resources.Resources.add_socio">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -377,6 +382,21 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_paymentDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_expenseDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_expense_typeDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:NCC2015.ncc_2015DataSet.loo_imageRow">
 <summary>
 Represents strongly named DataRow class.
@@ -423,6 +443,21 @@ Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:NCC2015.ncc_2015DataSet.loo_partner_timetable1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_paymentRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_expenseRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_expense_typeRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -477,6 +512,21 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_paymentRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_expenseRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.loo_expense_typeRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_imageTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
@@ -523,6 +573,21 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_partner_timetable1TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_paymentTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_expenseTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_expense_typeTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

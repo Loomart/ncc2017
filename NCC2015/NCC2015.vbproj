@@ -452,6 +452,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons\acept-128.png" />
+    <None Include="Resources\Add List-32.png" />
     <None Include="NCC2015_1_TemporaryKey.pfx" />
     <None Include="NCC2015_TemporaryKey.pfx" />
     <None Include="Resources\blankAvatart.png" />

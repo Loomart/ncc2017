@@ -45,6 +45,12 @@ Partial Public Class ncc_2015DataSet
     
     Private tableloo_partner_timetable1 As loo_partner_timetable1DataTable
     
+    Private tableloo_payment As loo_paymentDataTable
+    
+    Private tableloo_expense As loo_expenseDataTable
+    
+    Private tableloo_expense_type As loo_expense_typeDataTable
+    
     Private relationFKpartner As Global.System.Data.DataRelation
     
     Private relationfk_partner_id As Global.System.Data.DataRelation
@@ -52,6 +58,10 @@ Partial Public Class ncc_2015DataSet
     Private relationFKpartner1 As Global.System.Data.DataRelation
     
     Private relationfk_partner_id1 As Global.System.Data.DataRelation
+    
+    Private relationpayment_partner As Global.System.Data.DataRelation
+    
+    Private relationfk_expense_type As Global.System.Data.DataRelation
     
     Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
     
@@ -111,6 +121,15 @@ Partial Public Class ncc_2015DataSet
             End If
             If (Not (ds.Tables("loo_partner_timetable1")) Is Nothing) Then
                 MyBase.Tables.Add(New loo_partner_timetable1DataTable(ds.Tables("loo_partner_timetable1")))
+            End If
+            If (Not (ds.Tables("loo_payment")) Is Nothing) Then
+                MyBase.Tables.Add(New loo_paymentDataTable(ds.Tables("loo_payment")))
+            End If
+            If (Not (ds.Tables("loo_expense")) Is Nothing) Then
+                MyBase.Tables.Add(New loo_expenseDataTable(ds.Tables("loo_expense")))
+            End If
+            If (Not (ds.Tables("loo_expense_type")) Is Nothing) Then
+                MyBase.Tables.Add(New loo_expense_typeDataTable(ds.Tables("loo_expense_type")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -231,6 +250,36 @@ Partial Public Class ncc_2015DataSet
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+     Global.System.ComponentModel.Browsable(false),  _
+     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
+    Public ReadOnly Property loo_payment() As loo_paymentDataTable
+        Get
+            Return Me.tableloo_payment
+        End Get
+    End Property
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+     Global.System.ComponentModel.Browsable(false),  _
+     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
+    Public ReadOnly Property loo_expense() As loo_expenseDataTable
+        Get
+            Return Me.tableloo_expense
+        End Get
+    End Property
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+     Global.System.ComponentModel.Browsable(false),  _
+     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
+    Public ReadOnly Property loo_expense_type() As loo_expense_typeDataTable
+        Get
+            Return Me.tableloo_expense_type
+        End Get
+    End Property
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
      Global.System.ComponentModel.BrowsableAttribute(true),  _
      Global.System.ComponentModel.DesignerSerializationVisibilityAttribute(Global.System.ComponentModel.DesignerSerializationVisibility.Visible)>  _
     Public Overrides Property SchemaSerializationMode() As Global.System.Data.SchemaSerializationMode
@@ -326,6 +375,15 @@ Partial Public Class ncc_2015DataSet
             If (Not (ds.Tables("loo_partner_timetable1")) Is Nothing) Then
                 MyBase.Tables.Add(New loo_partner_timetable1DataTable(ds.Tables("loo_partner_timetable1")))
             End If
+            If (Not (ds.Tables("loo_payment")) Is Nothing) Then
+                MyBase.Tables.Add(New loo_paymentDataTable(ds.Tables("loo_payment")))
+            End If
+            If (Not (ds.Tables("loo_expense")) Is Nothing) Then
+                MyBase.Tables.Add(New loo_expenseDataTable(ds.Tables("loo_expense")))
+            End If
+            If (Not (ds.Tables("loo_expense_type")) Is Nothing) Then
+                MyBase.Tables.Add(New loo_expense_typeDataTable(ds.Tables("loo_expense_type")))
+            End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
             Me.Namespace = ds.Namespace
@@ -418,10 +476,30 @@ Partial Public Class ncc_2015DataSet
                 Me.tableloo_partner_timetable1.InitVars
             End If
         End If
+        Me.tableloo_payment = CType(MyBase.Tables("loo_payment"),loo_paymentDataTable)
+        If (initTable = true) Then
+            If (Not (Me.tableloo_payment) Is Nothing) Then
+                Me.tableloo_payment.InitVars
+            End If
+        End If
+        Me.tableloo_expense = CType(MyBase.Tables("loo_expense"),loo_expenseDataTable)
+        If (initTable = true) Then
+            If (Not (Me.tableloo_expense) Is Nothing) Then
+                Me.tableloo_expense.InitVars
+            End If
+        End If
+        Me.tableloo_expense_type = CType(MyBase.Tables("loo_expense_type"),loo_expense_typeDataTable)
+        If (initTable = true) Then
+            If (Not (Me.tableloo_expense_type) Is Nothing) Then
+                Me.tableloo_expense_type.InitVars
+            End If
+        End If
         Me.relationFKpartner = Me.Relations("FKpartner")
         Me.relationfk_partner_id = Me.Relations("fk_partner_id")
         Me.relationFKpartner1 = Me.Relations("FKpartner1")
         Me.relationfk_partner_id1 = Me.Relations("fk_partner_id1")
+        Me.relationpayment_partner = Me.Relations("payment_partner")
+        Me.relationfk_expense_type = Me.Relations("fk_expense_type")
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -452,6 +530,12 @@ Partial Public Class ncc_2015DataSet
         MyBase.Tables.Add(Me.tableloo_partner_class1)
         Me.tableloo_partner_timetable1 = New loo_partner_timetable1DataTable()
         MyBase.Tables.Add(Me.tableloo_partner_timetable1)
+        Me.tableloo_payment = New loo_paymentDataTable()
+        MyBase.Tables.Add(Me.tableloo_payment)
+        Me.tableloo_expense = New loo_expenseDataTable()
+        MyBase.Tables.Add(Me.tableloo_expense)
+        Me.tableloo_expense_type = New loo_expense_typeDataTable()
+        MyBase.Tables.Add(Me.tableloo_expense_type)
         Me.relationFKpartner = New Global.System.Data.DataRelation("FKpartner", New Global.System.Data.DataColumn() {Me.tableloo_partner.partner_idColumn}, New Global.System.Data.DataColumn() {Me.tableloo_medic.medic_partner_idColumn}, false)
         Me.Relations.Add(Me.relationFKpartner)
         Me.relationfk_partner_id = New Global.System.Data.DataRelation("fk_partner_id", New Global.System.Data.DataColumn() {Me.tableloo_partner.partner_idColumn}, New Global.System.Data.DataColumn() {Me.tableloo_partner_timetable.timetable_partner_idColumn}, false)
@@ -460,6 +544,10 @@ Partial Public Class ncc_2015DataSet
         Me.Relations.Add(Me.relationFKpartner1)
         Me.relationfk_partner_id1 = New Global.System.Data.DataRelation("fk_partner_id1", New Global.System.Data.DataColumn() {Me.tablepartner_info.partner_idColumn}, New Global.System.Data.DataColumn() {Me.tableloo_partner_timetable.timetable_partner_idColumn}, false)
         Me.Relations.Add(Me.relationfk_partner_id1)
+        Me.relationpayment_partner = New Global.System.Data.DataRelation("payment_partner", New Global.System.Data.DataColumn() {Me.tableloo_partner.partner_idColumn}, New Global.System.Data.DataColumn() {Me.tableloo_payment.payment_partnerColumn}, false)
+        Me.Relations.Add(Me.relationpayment_partner)
+        Me.relationfk_expense_type = New Global.System.Data.DataRelation("fk_expense_type", New Global.System.Data.DataColumn() {Me.tableloo_expense_type.expense_type_idColumn}, New Global.System.Data.DataColumn() {Me.tableloo_expense.expense_typeColumn}, false)
+        Me.Relations.Add(Me.relationfk_expense_type)
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -519,6 +607,24 @@ Partial Public Class ncc_2015DataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Private Function ShouldSerializeloo_partner_timetable1() As Boolean
+        Return false
+    End Function
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Private Function ShouldSerializeloo_payment() As Boolean
+        Return false
+    End Function
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Private Function ShouldSerializeloo_expense() As Boolean
+        Return false
+    End Function
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Private Function ShouldSerializeloo_expense_type() As Boolean
         Return false
     End Function
     
@@ -609,6 +715,15 @@ Partial Public Class ncc_2015DataSet
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Delegate Sub loo_partner_timetable1RowChangeEventHandler(ByVal sender As Object, ByVal e As loo_partner_timetable1RowChangeEvent)
+    
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Delegate Sub loo_paymentRowChangeEventHandler(ByVal sender As Object, ByVal e As loo_paymentRowChangeEvent)
+    
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Delegate Sub loo_expenseRowChangeEventHandler(ByVal sender As Object, ByVal e As loo_expenseRowChangeEvent)
+    
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Delegate Sub loo_expense_typeRowChangeEventHandler(ByVal sender As Object, ByVal e As loo_expense_typeRowChangeEvent)
     
     '''<summary>
     '''Represents the strongly named DataTable class.
@@ -4188,6 +4303,899 @@ Partial Public Class ncc_2015DataSet
     End Class
     
     '''<summary>
+    '''Represents the strongly named DataTable class.
+    '''</summary>
+    <Global.System.Serializable(),  _
+     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
+    Partial Public Class loo_paymentDataTable
+        Inherits Global.System.Data.TypedTableBase(Of loo_paymentRow)
+        
+        Private columnpayment_id As Global.System.Data.DataColumn
+        
+        Private columnpayment_date As Global.System.Data.DataColumn
+        
+        Private columnpayment_value As Global.System.Data.DataColumn
+        
+        Private columnpayment_partner As Global.System.Data.DataColumn
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.TableName = "loo_payment"
+            Me.BeginInit
+            Me.InitClass
+            Me.EndInit
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal table As Global.System.Data.DataTable)
+            MyBase.New
+            Me.TableName = table.TableName
+            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
+                Me.CaseSensitive = table.CaseSensitive
+            End If
+            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
+                Me.Locale = table.Locale
+            End If
+            If (table.Namespace <> table.DataSet.Namespace) Then
+                Me.Namespace = table.Namespace
+            End If
+            Me.Prefix = table.Prefix
+            Me.MinimumCapacity = table.MinimumCapacity
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
+            MyBase.New(info, context)
+            Me.InitVars
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property payment_idColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnpayment_id
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property payment_dateColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnpayment_date
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property payment_valueColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnpayment_value
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property payment_partnerColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnpayment_partner
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Browsable(false)>  _
+        Public ReadOnly Property Count() As Integer
+            Get
+                Return Me.Rows.Count
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Default ReadOnly Property Item(ByVal index As Integer) As loo_paymentRow
+            Get
+                Return CType(Me.Rows(index),loo_paymentRow)
+            End Get
+        End Property
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event loo_paymentRowChanging As loo_paymentRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event loo_paymentRowChanged As loo_paymentRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event loo_paymentRowDeleting As loo_paymentRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event loo_paymentRowDeleted As loo_paymentRowChangeEventHandler
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Sub Addloo_paymentRow(ByVal row As loo_paymentRow)
+            Me.Rows.Add(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Function Addloo_paymentRow(ByVal payment_date As Date, ByVal payment_value As Integer, ByVal parentloo_partnerRowBypayment_partner As loo_partnerRow) As loo_paymentRow
+            Dim rowloo_paymentRow As loo_paymentRow = CType(Me.NewRow,loo_paymentRow)
+            Dim columnValuesArray() As Object = New Object() {Nothing, payment_date, payment_value, Nothing}
+            If (Not (parentloo_partnerRowBypayment_partner) Is Nothing) Then
+                columnValuesArray(3) = parentloo_partnerRowBypayment_partner(0)
+            End If
+            rowloo_paymentRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowloo_paymentRow)
+            Return rowloo_paymentRow
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function FindBypayment_id(ByVal payment_id As Integer) As loo_paymentRow
+            Return CType(Me.Rows.Find(New Object() {payment_id}),loo_paymentRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overrides Function Clone() As Global.System.Data.DataTable
+            Dim cln As loo_paymentDataTable = CType(MyBase.Clone,loo_paymentDataTable)
+            cln.InitVars
+            Return cln
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
+            Return New loo_paymentDataTable()
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub InitVars()
+            Me.columnpayment_id = MyBase.Columns("payment_id")
+            Me.columnpayment_date = MyBase.Columns("payment_date")
+            Me.columnpayment_value = MyBase.Columns("payment_value")
+            Me.columnpayment_partner = MyBase.Columns("payment_partner")
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitClass()
+            Me.columnpayment_id = New Global.System.Data.DataColumn("payment_id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnpayment_id)
+            Me.columnpayment_date = New Global.System.Data.DataColumn("payment_date", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnpayment_date)
+            Me.columnpayment_value = New Global.System.Data.DataColumn("payment_value", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnpayment_value)
+            Me.columnpayment_partner = New Global.System.Data.DataColumn("payment_partner", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnpayment_partner)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnpayment_id}, true))
+            Me.columnpayment_id.AutoIncrement = true
+            Me.columnpayment_id.AutoIncrementSeed = -1
+            Me.columnpayment_id.AutoIncrementStep = -1
+            Me.columnpayment_id.AllowDBNull = false
+            Me.columnpayment_id.Unique = true
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function Newloo_paymentRow() As loo_paymentRow
+            Return CType(Me.NewRow,loo_paymentRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
+            Return New loo_paymentRow(builder)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function GetRowType() As Global.System.Type
+            Return GetType(loo_paymentRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanged(e)
+            If (Not (Me.loo_paymentRowChangedEvent) Is Nothing) Then
+                RaiseEvent loo_paymentRowChanged(Me, New loo_paymentRowChangeEvent(CType(e.Row,loo_paymentRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanging(e)
+            If (Not (Me.loo_paymentRowChangingEvent) Is Nothing) Then
+                RaiseEvent loo_paymentRowChanging(Me, New loo_paymentRowChangeEvent(CType(e.Row,loo_paymentRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleted(e)
+            If (Not (Me.loo_paymentRowDeletedEvent) Is Nothing) Then
+                RaiseEvent loo_paymentRowDeleted(Me, New loo_paymentRowChangeEvent(CType(e.Row,loo_paymentRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleting(e)
+            If (Not (Me.loo_paymentRowDeletingEvent) Is Nothing) Then
+                RaiseEvent loo_paymentRowDeleting(Me, New loo_paymentRowChangeEvent(CType(e.Row,loo_paymentRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub Removeloo_paymentRow(ByVal row As loo_paymentRow)
+            Me.Rows.Remove(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
+            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
+            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
+            Dim ds As ncc_2015DataSet = New ncc_2015DataSet()
+            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
+            any1.MinOccurs = New Decimal(0)
+            any1.MaxOccurs = Decimal.MaxValue
+            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any1)
+            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
+            any2.MinOccurs = New Decimal(1)
+            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any2)
+            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute1.Name = "namespace"
+            attribute1.FixedValue = ds.Namespace
+            type.Attributes.Add(attribute1)
+            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute2.Name = "tableTypeName"
+            attribute2.FixedValue = "loo_paymentDataTable"
+            type.Attributes.Add(attribute2)
+            type.Particle = sequence
+            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
+            If xs.Contains(dsSchema.TargetNamespace) Then
+                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Try 
+                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
+                    dsSchema.Write(s1)
+                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
+                    Do While schemas.MoveNext
+                        schema = CType(schemas.Current,Global.System.Xml.Schema.XmlSchema)
+                        s2.SetLength(0)
+                        schema.Write(s2)
+                        If (s1.Length = s2.Length) Then
+                            s1.Position = 0
+                            s2.Position = 0
+                            
+                            Do While ((s1.Position <> s1.Length)  _
+                                        AndAlso (s1.ReadByte = s2.ReadByte))
+                                
+                                
+                            Loop
+                            If (s1.Position = s1.Length) Then
+                                Return type
+                            End If
+                        End If
+                        
+                    Loop
+                Finally
+                    If (Not (s1) Is Nothing) Then
+                        s1.Close
+                    End If
+                    If (Not (s2) Is Nothing) Then
+                        s2.Close
+                    End If
+                End Try
+            End If
+            xs.Add(dsSchema)
+            Return type
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the strongly named DataTable class.
+    '''</summary>
+    <Global.System.Serializable(),  _
+     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
+    Partial Public Class loo_expenseDataTable
+        Inherits Global.System.Data.TypedTableBase(Of loo_expenseRow)
+        
+        Private columnexpense_id As Global.System.Data.DataColumn
+        
+        Private columnexpense_type As Global.System.Data.DataColumn
+        
+        Private columnexpense_value As Global.System.Data.DataColumn
+        
+        Private columnexpense_date As Global.System.Data.DataColumn
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.TableName = "loo_expense"
+            Me.BeginInit
+            Me.InitClass
+            Me.EndInit
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal table As Global.System.Data.DataTable)
+            MyBase.New
+            Me.TableName = table.TableName
+            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
+                Me.CaseSensitive = table.CaseSensitive
+            End If
+            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
+                Me.Locale = table.Locale
+            End If
+            If (table.Namespace <> table.DataSet.Namespace) Then
+                Me.Namespace = table.Namespace
+            End If
+            Me.Prefix = table.Prefix
+            Me.MinimumCapacity = table.MinimumCapacity
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
+            MyBase.New(info, context)
+            Me.InitVars
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property expense_idColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnexpense_id
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property expense_typeColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnexpense_type
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property expense_valueColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnexpense_value
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property expense_dateColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnexpense_date
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Browsable(false)>  _
+        Public ReadOnly Property Count() As Integer
+            Get
+                Return Me.Rows.Count
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Default ReadOnly Property Item(ByVal index As Integer) As loo_expenseRow
+            Get
+                Return CType(Me.Rows(index),loo_expenseRow)
+            End Get
+        End Property
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event loo_expenseRowChanging As loo_expenseRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event loo_expenseRowChanged As loo_expenseRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event loo_expenseRowDeleting As loo_expenseRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event loo_expenseRowDeleted As loo_expenseRowChangeEventHandler
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Sub Addloo_expenseRow(ByVal row As loo_expenseRow)
+            Me.Rows.Add(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Function Addloo_expenseRow(ByVal parentloo_expense_typeRowByfk_expense_type As loo_expense_typeRow, ByVal expense_value As Decimal, ByVal expense_date As Date) As loo_expenseRow
+            Dim rowloo_expenseRow As loo_expenseRow = CType(Me.NewRow,loo_expenseRow)
+            Dim columnValuesArray() As Object = New Object() {Nothing, Nothing, expense_value, expense_date}
+            If (Not (parentloo_expense_typeRowByfk_expense_type) Is Nothing) Then
+                columnValuesArray(1) = parentloo_expense_typeRowByfk_expense_type(0)
+            End If
+            rowloo_expenseRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowloo_expenseRow)
+            Return rowloo_expenseRow
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function FindByexpense_id(ByVal expense_id As Integer) As loo_expenseRow
+            Return CType(Me.Rows.Find(New Object() {expense_id}),loo_expenseRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overrides Function Clone() As Global.System.Data.DataTable
+            Dim cln As loo_expenseDataTable = CType(MyBase.Clone,loo_expenseDataTable)
+            cln.InitVars
+            Return cln
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
+            Return New loo_expenseDataTable()
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub InitVars()
+            Me.columnexpense_id = MyBase.Columns("expense_id")
+            Me.columnexpense_type = MyBase.Columns("expense_type")
+            Me.columnexpense_value = MyBase.Columns("expense_value")
+            Me.columnexpense_date = MyBase.Columns("expense_date")
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitClass()
+            Me.columnexpense_id = New Global.System.Data.DataColumn("expense_id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnexpense_id)
+            Me.columnexpense_type = New Global.System.Data.DataColumn("expense_type", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnexpense_type)
+            Me.columnexpense_value = New Global.System.Data.DataColumn("expense_value", GetType(Decimal), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnexpense_value)
+            Me.columnexpense_date = New Global.System.Data.DataColumn("expense_date", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnexpense_date)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnexpense_id}, true))
+            Me.columnexpense_id.AutoIncrement = true
+            Me.columnexpense_id.AutoIncrementSeed = -1
+            Me.columnexpense_id.AutoIncrementStep = -1
+            Me.columnexpense_id.AllowDBNull = false
+            Me.columnexpense_id.Unique = true
+            Me.columnexpense_type.AllowDBNull = false
+            Me.columnexpense_value.AllowDBNull = false
+            Me.columnexpense_date.AllowDBNull = false
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function Newloo_expenseRow() As loo_expenseRow
+            Return CType(Me.NewRow,loo_expenseRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
+            Return New loo_expenseRow(builder)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function GetRowType() As Global.System.Type
+            Return GetType(loo_expenseRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanged(e)
+            If (Not (Me.loo_expenseRowChangedEvent) Is Nothing) Then
+                RaiseEvent loo_expenseRowChanged(Me, New loo_expenseRowChangeEvent(CType(e.Row,loo_expenseRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanging(e)
+            If (Not (Me.loo_expenseRowChangingEvent) Is Nothing) Then
+                RaiseEvent loo_expenseRowChanging(Me, New loo_expenseRowChangeEvent(CType(e.Row,loo_expenseRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleted(e)
+            If (Not (Me.loo_expenseRowDeletedEvent) Is Nothing) Then
+                RaiseEvent loo_expenseRowDeleted(Me, New loo_expenseRowChangeEvent(CType(e.Row,loo_expenseRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleting(e)
+            If (Not (Me.loo_expenseRowDeletingEvent) Is Nothing) Then
+                RaiseEvent loo_expenseRowDeleting(Me, New loo_expenseRowChangeEvent(CType(e.Row,loo_expenseRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub Removeloo_expenseRow(ByVal row As loo_expenseRow)
+            Me.Rows.Remove(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
+            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
+            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
+            Dim ds As ncc_2015DataSet = New ncc_2015DataSet()
+            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
+            any1.MinOccurs = New Decimal(0)
+            any1.MaxOccurs = Decimal.MaxValue
+            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any1)
+            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
+            any2.MinOccurs = New Decimal(1)
+            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any2)
+            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute1.Name = "namespace"
+            attribute1.FixedValue = ds.Namespace
+            type.Attributes.Add(attribute1)
+            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute2.Name = "tableTypeName"
+            attribute2.FixedValue = "loo_expenseDataTable"
+            type.Attributes.Add(attribute2)
+            type.Particle = sequence
+            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
+            If xs.Contains(dsSchema.TargetNamespace) Then
+                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Try 
+                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
+                    dsSchema.Write(s1)
+                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
+                    Do While schemas.MoveNext
+                        schema = CType(schemas.Current,Global.System.Xml.Schema.XmlSchema)
+                        s2.SetLength(0)
+                        schema.Write(s2)
+                        If (s1.Length = s2.Length) Then
+                            s1.Position = 0
+                            s2.Position = 0
+                            
+                            Do While ((s1.Position <> s1.Length)  _
+                                        AndAlso (s1.ReadByte = s2.ReadByte))
+                                
+                                
+                            Loop
+                            If (s1.Position = s1.Length) Then
+                                Return type
+                            End If
+                        End If
+                        
+                    Loop
+                Finally
+                    If (Not (s1) Is Nothing) Then
+                        s1.Close
+                    End If
+                    If (Not (s2) Is Nothing) Then
+                        s2.Close
+                    End If
+                End Try
+            End If
+            xs.Add(dsSchema)
+            Return type
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the strongly named DataTable class.
+    '''</summary>
+    <Global.System.Serializable(),  _
+     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
+    Partial Public Class loo_expense_typeDataTable
+        Inherits Global.System.Data.TypedTableBase(Of loo_expense_typeRow)
+        
+        Private columnexpense_type_id As Global.System.Data.DataColumn
+        
+        Private columnexpense_type_name As Global.System.Data.DataColumn
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.TableName = "loo_expense_type"
+            Me.BeginInit
+            Me.InitClass
+            Me.EndInit
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal table As Global.System.Data.DataTable)
+            MyBase.New
+            Me.TableName = table.TableName
+            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
+                Me.CaseSensitive = table.CaseSensitive
+            End If
+            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
+                Me.Locale = table.Locale
+            End If
+            If (table.Namespace <> table.DataSet.Namespace) Then
+                Me.Namespace = table.Namespace
+            End If
+            Me.Prefix = table.Prefix
+            Me.MinimumCapacity = table.MinimumCapacity
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
+            MyBase.New(info, context)
+            Me.InitVars
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property expense_type_idColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnexpense_type_id
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property expense_type_nameColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnexpense_type_name
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Browsable(false)>  _
+        Public ReadOnly Property Count() As Integer
+            Get
+                Return Me.Rows.Count
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Default ReadOnly Property Item(ByVal index As Integer) As loo_expense_typeRow
+            Get
+                Return CType(Me.Rows(index),loo_expense_typeRow)
+            End Get
+        End Property
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event loo_expense_typeRowChanging As loo_expense_typeRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event loo_expense_typeRowChanged As loo_expense_typeRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event loo_expense_typeRowDeleting As loo_expense_typeRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Event loo_expense_typeRowDeleted As loo_expense_typeRowChangeEventHandler
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Sub Addloo_expense_typeRow(ByVal row As loo_expense_typeRow)
+            Me.Rows.Add(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overloads Function Addloo_expense_typeRow(ByVal expense_type_name As String) As loo_expense_typeRow
+            Dim rowloo_expense_typeRow As loo_expense_typeRow = CType(Me.NewRow,loo_expense_typeRow)
+            Dim columnValuesArray() As Object = New Object() {Nothing, expense_type_name}
+            rowloo_expense_typeRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowloo_expense_typeRow)
+            Return rowloo_expense_typeRow
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function FindByexpense_type_id(ByVal expense_type_id As Integer) As loo_expense_typeRow
+            Return CType(Me.Rows.Find(New Object() {expense_type_id}),loo_expense_typeRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Overrides Function Clone() As Global.System.Data.DataTable
+            Dim cln As loo_expense_typeDataTable = CType(MyBase.Clone,loo_expense_typeDataTable)
+            cln.InitVars
+            Return cln
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
+            Return New loo_expense_typeDataTable()
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub InitVars()
+            Me.columnexpense_type_id = MyBase.Columns("expense_type_id")
+            Me.columnexpense_type_name = MyBase.Columns("expense_type_name")
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitClass()
+            Me.columnexpense_type_id = New Global.System.Data.DataColumn("expense_type_id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnexpense_type_id)
+            Me.columnexpense_type_name = New Global.System.Data.DataColumn("expense_type_name", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnexpense_type_name)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnexpense_type_id}, true))
+            Me.columnexpense_type_id.AutoIncrement = true
+            Me.columnexpense_type_id.AutoIncrementSeed = -1
+            Me.columnexpense_type_id.AutoIncrementStep = -1
+            Me.columnexpense_type_id.AllowDBNull = false
+            Me.columnexpense_type_id.Unique = true
+            Me.columnexpense_type_name.AllowDBNull = false
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function Newloo_expense_typeRow() As loo_expense_typeRow
+            Return CType(Me.NewRow,loo_expense_typeRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
+            Return New loo_expense_typeRow(builder)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Function GetRowType() As Global.System.Type
+            Return GetType(loo_expense_typeRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanged(e)
+            If (Not (Me.loo_expense_typeRowChangedEvent) Is Nothing) Then
+                RaiseEvent loo_expense_typeRowChanged(Me, New loo_expense_typeRowChangeEvent(CType(e.Row,loo_expense_typeRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanging(e)
+            If (Not (Me.loo_expense_typeRowChangingEvent) Is Nothing) Then
+                RaiseEvent loo_expense_typeRowChanging(Me, New loo_expense_typeRowChangeEvent(CType(e.Row,loo_expense_typeRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleted(e)
+            If (Not (Me.loo_expense_typeRowDeletedEvent) Is Nothing) Then
+                RaiseEvent loo_expense_typeRowDeleted(Me, New loo_expense_typeRowChangeEvent(CType(e.Row,loo_expense_typeRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleting(e)
+            If (Not (Me.loo_expense_typeRowDeletingEvent) Is Nothing) Then
+                RaiseEvent loo_expense_typeRowDeleting(Me, New loo_expense_typeRowChangeEvent(CType(e.Row,loo_expense_typeRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub Removeloo_expense_typeRow(ByVal row As loo_expense_typeRow)
+            Me.Rows.Remove(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
+            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
+            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
+            Dim ds As ncc_2015DataSet = New ncc_2015DataSet()
+            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
+            any1.MinOccurs = New Decimal(0)
+            any1.MaxOccurs = Decimal.MaxValue
+            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any1)
+            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
+            any2.MinOccurs = New Decimal(1)
+            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any2)
+            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute1.Name = "namespace"
+            attribute1.FixedValue = ds.Namespace
+            type.Attributes.Add(attribute1)
+            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute2.Name = "tableTypeName"
+            attribute2.FixedValue = "loo_expense_typeDataTable"
+            type.Attributes.Add(attribute2)
+            type.Particle = sequence
+            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
+            If xs.Contains(dsSchema.TargetNamespace) Then
+                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Try 
+                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
+                    dsSchema.Write(s1)
+                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
+                    Do While schemas.MoveNext
+                        schema = CType(schemas.Current,Global.System.Xml.Schema.XmlSchema)
+                        s2.SetLength(0)
+                        schema.Write(s2)
+                        If (s1.Length = s2.Length) Then
+                            s1.Position = 0
+                            s2.Position = 0
+                            
+                            Do While ((s1.Position <> s1.Length)  _
+                                        AndAlso (s1.ReadByte = s2.ReadByte))
+                                
+                                
+                            Loop
+                            If (s1.Position = s1.Length) Then
+                                Return type
+                            End If
+                        End If
+                        
+                    Loop
+                Finally
+                    If (Not (s1) Is Nothing) Then
+                        s1.Close
+                    End If
+                    If (Not (s2) Is Nothing) Then
+                        s2.Close
+                    End If
+                End Try
+            End If
+            xs.Add(dsSchema)
+            Return type
+        End Function
+    End Class
+    
+    '''<summary>
     '''Represents strongly named DataRow class.
     '''</summary>
     Partial Public Class loo_imageRow
@@ -4933,6 +5941,16 @@ Partial Public Class ncc_2015DataSet
                 Return New loo_partner_timetableRow(-1) {}
             Else
                 Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("fk_partner_id")),loo_partner_timetableRow())
+            End If
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function Getloo_paymentRows() As loo_paymentRow()
+            If (Me.Table.ChildRelations("payment_partner") Is Nothing) Then
+                Return New loo_paymentRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("payment_partner")),loo_paymentRow())
             End If
         End Function
     End Class
@@ -6400,6 +7418,244 @@ Partial Public Class ncc_2015DataSet
     End Class
     
     '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class loo_paymentRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tableloo_payment As loo_paymentDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tableloo_payment = CType(Me.Table,loo_paymentDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property payment_id() As Integer
+            Get
+                Return CType(Me(Me.tableloo_payment.payment_idColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableloo_payment.payment_idColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property payment_date() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tableloo_payment.payment_dateColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'payment_date' in table 'loo_payment' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableloo_payment.payment_dateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property payment_value() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableloo_payment.payment_valueColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'payment_value' in table 'loo_payment' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableloo_payment.payment_valueColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property payment_partner() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableloo_payment.payment_partnerColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'payment_partner' in table 'loo_payment' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableloo_payment.payment_partnerColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property loo_partnerRow() As loo_partnerRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("payment_partner")),loo_partnerRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("payment_partner"))
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function Ispayment_dateNull() As Boolean
+            Return Me.IsNull(Me.tableloo_payment.payment_dateColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub Setpayment_dateNull()
+            Me(Me.tableloo_payment.payment_dateColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function Ispayment_valueNull() As Boolean
+            Return Me.IsNull(Me.tableloo_payment.payment_valueColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub Setpayment_valueNull()
+            Me(Me.tableloo_payment.payment_valueColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function Ispayment_partnerNull() As Boolean
+            Return Me.IsNull(Me.tableloo_payment.payment_partnerColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub Setpayment_partnerNull()
+            Me(Me.tableloo_payment.payment_partnerColumn) = Global.System.Convert.DBNull
+        End Sub
+    End Class
+    
+    '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class loo_expenseRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tableloo_expense As loo_expenseDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tableloo_expense = CType(Me.Table,loo_expenseDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property expense_id() As Integer
+            Get
+                Return CType(Me(Me.tableloo_expense.expense_idColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableloo_expense.expense_idColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property expense_type() As Integer
+            Get
+                Return CType(Me(Me.tableloo_expense.expense_typeColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableloo_expense.expense_typeColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property expense_value() As Decimal
+            Get
+                Return CType(Me(Me.tableloo_expense.expense_valueColumn),Decimal)
+            End Get
+            Set
+                Me(Me.tableloo_expense.expense_valueColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property expense_date() As Date
+            Get
+                Return CType(Me(Me.tableloo_expense.expense_dateColumn),Date)
+            End Get
+            Set
+                Me(Me.tableloo_expense.expense_dateColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property loo_expense_typeRow() As loo_expense_typeRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("fk_expense_type")),loo_expense_typeRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("fk_expense_type"))
+            End Set
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class loo_expense_typeRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tableloo_expense_type As loo_expense_typeDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tableloo_expense_type = CType(Me.Table,loo_expense_typeDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property expense_type_id() As Integer
+            Get
+                Return CType(Me(Me.tableloo_expense_type.expense_type_idColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableloo_expense_type.expense_type_idColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property expense_type_name() As String
+            Get
+                Return CType(Me(Me.tableloo_expense_type.expense_type_nameColumn),String)
+            End Get
+            Set
+                Me(Me.tableloo_expense_type.expense_type_nameColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function Getloo_expenseRows() As loo_expenseRow()
+            If (Me.Table.ChildRelations("fk_expense_type") Is Nothing) Then
+                Return New loo_expenseRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("fk_expense_type")),loo_expenseRow())
+            End If
+        End Function
+    End Class
+    
+    '''<summary>
     '''Row event argument class
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -6745,6 +8001,114 @@ Partial Public Class ncc_2015DataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public ReadOnly Property Row() As loo_partner_timetable1Row
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class loo_paymentRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As loo_paymentRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As loo_paymentRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As loo_paymentRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class loo_expenseRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As loo_expenseRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As loo_expenseRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As loo_expenseRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+    Public Class loo_expense_typeRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As loo_expense_typeRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New(ByVal row As loo_expense_typeRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Row() As loo_expense_typeRow
             Get
                 Return Me.eventRow
             End Get
@@ -12039,6 +13403,1274 @@ Namespace ncc_2015DataSetTableAdapters
     End Class
     
     '''<summary>
+    '''Represents the connection and commands used to retrieve and save data.
+    '''</summary>
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    Partial Public Class loo_paymentTableAdapter
+        Inherits Global.System.ComponentModel.Component
+        
+        Private WithEvents _adapter As Global.Devart.Data.MySql.MySqlDataAdapter
+        
+        Private _connection As Global.Devart.Data.MySql.MySqlConnection
+        
+        Private _transaction As Global.System.Data.Common.DbTransaction
+        
+        Private _commandCollection() As Global.Devart.Data.MySql.MySqlCommand
+        
+        Private _clearBeforeFill As Boolean
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.ClearBeforeFill = true
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Friend ReadOnly Property Adapter() As Global.Devart.Data.MySql.MySqlDataAdapter
+            Get
+                If (Me._adapter Is Nothing) Then
+                    Me.InitAdapter
+                End If
+                Return Me._adapter
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Connection() As Global.Devart.Data.MySql.MySqlConnection
+            Get
+                If (Me._connection Is Nothing) Then
+                    Me.InitConnection
+                End If
+                Return Me._connection
+            End Get
+            Set
+                Me._connection = value
+                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
+                    Me.Adapter.InsertCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
+                    Me.Adapter.DeleteCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
+                    Me.Adapter.UpdateCommand.Connection = value
+                End If
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
+                        CType(Me.CommandCollection(i),Global.Devart.Data.MySql.MySqlCommand).Connection = value
+                    End If
+                    i = (i + 1)
+                Loop
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Transaction() As Global.System.Data.Common.DbTransaction
+            Get
+                Return Me._transaction
+            End Get
+            Set
+                Me._transaction = value
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    Me.CommandCollection(i).Transaction = Me._transaction
+                    i = (i + 1)
+                Loop
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
+                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
+                    Me.Adapter.InsertCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
+                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
+                End If
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected ReadOnly Property CommandCollection() As Global.Devart.Data.MySql.MySqlCommand()
+            Get
+                If (Me._commandCollection Is Nothing) Then
+                    Me.InitCommandCollection
+                End If
+                Return Me._commandCollection
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ClearBeforeFill() As Boolean
+            Get
+                Return Me._clearBeforeFill
+            End Get
+            Set
+                Me._clearBeforeFill = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitAdapter()
+            Me._adapter = New Global.Devart.Data.MySql.MySqlDataAdapter()
+            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
+            tableMapping.SourceTable = "Table"
+            tableMapping.DataSetTable = "loo_payment"
+            tableMapping.ColumnMappings.Add("payment_id", "payment_id")
+            tableMapping.ColumnMappings.Add("payment_date", "payment_date")
+            tableMapping.ColumnMappings.Add("payment_value", "payment_value")
+            tableMapping.ColumnMappings.Add("payment_partner", "payment_partner")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.Devart.Data.MySql.MySqlCommand()
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `ncc_2015`.`loo_payment` WHERE ((`payment_id` = :Original_payment_id)"& _ 
+                " AND ((:IsNull_payment_date = 1 AND `payment_date` IS NULL) OR (`payment_date` ="& _ 
+                " :Original_payment_date)) AND ((:IsNull_payment_value = 1 AND `payment_value` IS"& _ 
+                " NULL) OR (`payment_value` = :Original_payment_value)) AND ((:IsNull_payment_par"& _ 
+                "tner = 1 AND `payment_partner` IS NULL) OR (`payment_partner` = :Original_paymen"& _ 
+                "t_partner)))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Dim param As Global.Devart.Data.MySql.MySqlParameter = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_payment_id"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_id"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "IsNull_payment_date"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_date"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_payment_date"
+            param.DbType = Global.System.Data.DbType.[Date]
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.[Date]
+            param.IsNullable = true
+            param.SourceColumn = "payment_date"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "IsNull_payment_value"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_value"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_payment_value"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_value"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "IsNull_payment_partner"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_partner"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_payment_partner"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_partner"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            Me._adapter.InsertCommand = New Global.Devart.Data.MySql.MySqlCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `ncc_2015`.`loo_payment` (`payment_date`, `payment_value`, `payment_p"& _ 
+                "artner`) VALUES (:payment_date, :payment_value, :payment_partner)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "payment_date"
+            param.DbType = Global.System.Data.DbType.[Date]
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.[Date]
+            param.IsNullable = true
+            param.SourceColumn = "payment_date"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "payment_value"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_value"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "payment_partner"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_partner"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            Me._adapter.UpdateCommand = New Global.Devart.Data.MySql.MySqlCommand()
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `ncc_2015`.`loo_payment` SET `payment_date` = :payment_date, `payment_valu"& _ 
+                "e` = :payment_value, `payment_partner` = :payment_partner WHERE ((`payment_id` ="& _ 
+                " :Original_payment_id) AND ((:IsNull_payment_date = 1 AND `payment_date` IS NULL"& _ 
+                ") OR (`payment_date` = :Original_payment_date)) AND ((:IsNull_payment_value = 1 "& _ 
+                "AND `payment_value` IS NULL) OR (`payment_value` = :Original_payment_value)) AND"& _ 
+                " ((:IsNull_payment_partner = 1 AND `payment_partner` IS NULL) OR (`payment_partn"& _ 
+                "er` = :Original_payment_partner)))"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "payment_date"
+            param.DbType = Global.System.Data.DbType.[Date]
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.[Date]
+            param.IsNullable = true
+            param.SourceColumn = "payment_date"
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "payment_value"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_value"
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "payment_partner"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_partner"
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_payment_id"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_id"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "IsNull_payment_date"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_date"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_payment_date"
+            param.DbType = Global.System.Data.DbType.[Date]
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.[Date]
+            param.IsNullable = true
+            param.SourceColumn = "payment_date"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "IsNull_payment_value"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_value"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_payment_value"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_value"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "IsNull_payment_partner"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_partner"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            param.SourceColumnNullMapping = true
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_payment_partner"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "payment_partner"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitConnection()
+            Me._connection = New Global.Devart.Data.MySql.MySqlConnection()
+            Me._connection.ConnectionString = Global.NCC2015.My.MySettings.Default.ncc_cs
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitCommandCollection()
+            Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(0) {}
+            Me._commandCollection(0) = New Global.Devart.Data.MySql.MySqlCommand()
+            Me._commandCollection(0).Connection = Me.Connection
+            Me._commandCollection(0).CommandText = "SELECT payment_id, payment_date, payment_value, payment_partner FROM ncc_2015.loo"& _ 
+                "_payment"
+            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+        Public Overloads Overridable Function Fill(ByVal dataTable As ncc_2015DataSet.loo_paymentDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+        Public Overloads Overridable Function GetData() As ncc_2015DataSet.loo_paymentDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As ncc_2015DataSet.loo_paymentDataTable = New ncc_2015DataSet.loo_paymentDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataTable As ncc_2015DataSet.loo_paymentDataTable) As Integer
+            Return Me.Adapter.Update(dataTable)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataSet As ncc_2015DataSet) As Integer
+            Return Me.Adapter.Update(dataSet, "loo_payment")
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(dataRows)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
+        Public Overloads Overridable Function Delete(ByVal Original_payment_id As Integer, ByVal Original_payment_date As Global.System.Nullable(Of Date), ByVal Original_payment_value As Global.System.Nullable(Of Integer), ByVal Original_payment_partner As Global.System.Nullable(Of Integer)) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_payment_id,Integer)
+            If (Original_payment_date.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_payment_date.Value,Date)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            If (Original_payment_value.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = CType(Original_payment_value.Value,Integer)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(4).Value = Global.System.DBNull.Value
+            End If
+            If (Original_payment_partner.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(Original_payment_partner.Value,Integer)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(5).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(6).Value = Global.System.DBNull.Value
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.DeleteCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.DeleteCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+        Public Overloads Overridable Function Insert(ByVal payment_date As Global.System.Nullable(Of Date), ByVal payment_value As Global.System.Nullable(Of Integer), ByVal payment_partner As Global.System.Nullable(Of Integer)) As Integer
+            If (payment_date.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(payment_date.Value,Date)
+            Else
+                Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
+            End If
+            If (payment_value.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(payment_value.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            If (payment_partner.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(payment_partner.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+        Public Overloads Overridable Function Update(ByVal payment_date As Global.System.Nullable(Of Date), ByVal payment_value As Global.System.Nullable(Of Integer), ByVal payment_partner As Global.System.Nullable(Of Integer), ByVal Original_payment_id As Integer, ByVal Original_payment_date As Global.System.Nullable(Of Date), ByVal Original_payment_value As Global.System.Nullable(Of Integer), ByVal Original_payment_partner As Global.System.Nullable(Of Integer)) As Integer
+            If (payment_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(payment_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(0).Value = Global.System.DBNull.Value
+            End If
+            If (payment_value.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(payment_value.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
+            End If
+            If (payment_partner.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(payment_partner.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_payment_id,Integer)
+            If (Original_payment_date.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_payment_date.Value,Date)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(5).Value = Global.System.DBNull.Value
+            End If
+            If (Original_payment_value.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(Original_payment_value.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(7).Value = Global.System.DBNull.Value
+            End If
+            If (Original_payment_partner.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Original_payment_partner.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(9).Value = Global.System.DBNull.Value
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.UpdateCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.UpdateCommand.Connection.Close
+                End If
+            End Try
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the connection and commands used to retrieve and save data.
+    '''</summary>
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    Partial Public Class loo_expenseTableAdapter
+        Inherits Global.System.ComponentModel.Component
+        
+        Private WithEvents _adapter As Global.Devart.Data.MySql.MySqlDataAdapter
+        
+        Private _connection As Global.Devart.Data.MySql.MySqlConnection
+        
+        Private _transaction As Global.System.Data.Common.DbTransaction
+        
+        Private _commandCollection() As Global.Devart.Data.MySql.MySqlCommand
+        
+        Private _clearBeforeFill As Boolean
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.ClearBeforeFill = true
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Friend ReadOnly Property Adapter() As Global.Devart.Data.MySql.MySqlDataAdapter
+            Get
+                If (Me._adapter Is Nothing) Then
+                    Me.InitAdapter
+                End If
+                Return Me._adapter
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Connection() As Global.Devart.Data.MySql.MySqlConnection
+            Get
+                If (Me._connection Is Nothing) Then
+                    Me.InitConnection
+                End If
+                Return Me._connection
+            End Get
+            Set
+                Me._connection = value
+                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
+                    Me.Adapter.InsertCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
+                    Me.Adapter.DeleteCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
+                    Me.Adapter.UpdateCommand.Connection = value
+                End If
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
+                        CType(Me.CommandCollection(i),Global.Devart.Data.MySql.MySqlCommand).Connection = value
+                    End If
+                    i = (i + 1)
+                Loop
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Transaction() As Global.System.Data.Common.DbTransaction
+            Get
+                Return Me._transaction
+            End Get
+            Set
+                Me._transaction = value
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    Me.CommandCollection(i).Transaction = Me._transaction
+                    i = (i + 1)
+                Loop
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
+                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
+                    Me.Adapter.InsertCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
+                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
+                End If
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected ReadOnly Property CommandCollection() As Global.Devart.Data.MySql.MySqlCommand()
+            Get
+                If (Me._commandCollection Is Nothing) Then
+                    Me.InitCommandCollection
+                End If
+                Return Me._commandCollection
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ClearBeforeFill() As Boolean
+            Get
+                Return Me._clearBeforeFill
+            End Get
+            Set
+                Me._clearBeforeFill = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitAdapter()
+            Me._adapter = New Global.Devart.Data.MySql.MySqlDataAdapter()
+            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
+            tableMapping.SourceTable = "Table"
+            tableMapping.DataSetTable = "loo_expense"
+            tableMapping.ColumnMappings.Add("expense_id", "expense_id")
+            tableMapping.ColumnMappings.Add("expense_type", "expense_type")
+            tableMapping.ColumnMappings.Add("expense_value", "expense_value")
+            tableMapping.ColumnMappings.Add("expense_date", "expense_date")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.Devart.Data.MySql.MySqlCommand()
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `ncc_2015`.`loo_expense` WHERE ((`expense_id` = :Original_expense_id)"& _ 
+                " AND (`expense_type` = :Original_expense_type) AND (`expense_value` = :Original_"& _ 
+                "expense_value) AND (`expense_date` = :Original_expense_date))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Dim param As Global.Devart.Data.MySql.MySqlParameter = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_expense_id"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "expense_id"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_expense_type"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "expense_type"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_expense_value"
+            param.DbType = Global.System.Data.DbType.[Decimal]
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.[Decimal]
+            param.IsNullable = true
+            param.SourceColumn = "expense_value"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_expense_date"
+            param.DbType = Global.System.Data.DbType.DateTime
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.TimeStamp
+            param.IsNullable = true
+            param.SourceColumn = "expense_date"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            Me._adapter.InsertCommand = New Global.Devart.Data.MySql.MySqlCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `ncc_2015`.`loo_expense` (`expense_type`, `expense_value`, `expense_d"& _ 
+                "ate`) VALUES (:expense_type, :expense_value, :expense_date)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "expense_type"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "expense_type"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "expense_value"
+            param.DbType = Global.System.Data.DbType.[Decimal]
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.[Decimal]
+            param.IsNullable = true
+            param.SourceColumn = "expense_value"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "expense_date"
+            param.DbType = Global.System.Data.DbType.DateTime
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.TimeStamp
+            param.IsNullable = true
+            param.SourceColumn = "expense_date"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            Me._adapter.UpdateCommand = New Global.Devart.Data.MySql.MySqlCommand()
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `ncc_2015`.`loo_expense` SET `expense_type` = :expense_type, `expense_valu"& _ 
+                "e` = :expense_value, `expense_date` = :expense_date WHERE ((`expense_id` = :Orig"& _ 
+                "inal_expense_id) AND (`expense_type` = :Original_expense_type) AND (`expense_val"& _ 
+                "ue` = :Original_expense_value) AND (`expense_date` = :Original_expense_date))"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "expense_type"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "expense_type"
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "expense_value"
+            param.DbType = Global.System.Data.DbType.[Decimal]
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.[Decimal]
+            param.IsNullable = true
+            param.SourceColumn = "expense_value"
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "expense_date"
+            param.DbType = Global.System.Data.DbType.DateTime
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.TimeStamp
+            param.IsNullable = true
+            param.SourceColumn = "expense_date"
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_expense_id"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "expense_id"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_expense_type"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "expense_type"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_expense_value"
+            param.DbType = Global.System.Data.DbType.[Decimal]
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.[Decimal]
+            param.IsNullable = true
+            param.SourceColumn = "expense_value"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_expense_date"
+            param.DbType = Global.System.Data.DbType.DateTime
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.TimeStamp
+            param.IsNullable = true
+            param.SourceColumn = "expense_date"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitConnection()
+            Me._connection = New Global.Devart.Data.MySql.MySqlConnection()
+            Me._connection.ConnectionString = Global.NCC2015.My.MySettings.Default.ncc_cs
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitCommandCollection()
+            Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(0) {}
+            Me._commandCollection(0) = New Global.Devart.Data.MySql.MySqlCommand()
+            Me._commandCollection(0).Connection = Me.Connection
+            Me._commandCollection(0).CommandText = "SELECT expense_id, expense_type, expense_value, expense_date FROM ncc_2015.loo_ex"& _ 
+                "pense"
+            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+        Public Overloads Overridable Function Fill(ByVal dataTable As ncc_2015DataSet.loo_expenseDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+        Public Overloads Overridable Function GetData() As ncc_2015DataSet.loo_expenseDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As ncc_2015DataSet.loo_expenseDataTable = New ncc_2015DataSet.loo_expenseDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataTable As ncc_2015DataSet.loo_expenseDataTable) As Integer
+            Return Me.Adapter.Update(dataTable)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataSet As ncc_2015DataSet) As Integer
+            Return Me.Adapter.Update(dataSet, "loo_expense")
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(dataRows)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
+        Public Overloads Overridable Function Delete(ByVal Original_expense_id As Integer, ByVal Original_expense_type As Integer, ByVal Original_expense_value As Decimal, ByVal Original_expense_date As Date) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_expense_id,Integer)
+            Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_expense_type,Integer)
+            Me.Adapter.DeleteCommand.Parameters(2).Value = CType(Original_expense_value,Decimal)
+            Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_expense_date,Date)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.DeleteCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.DeleteCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+        Public Overloads Overridable Function Insert(ByVal expense_type As Integer, ByVal expense_value As Decimal, ByVal expense_date As Date) As Integer
+            Me.Adapter.InsertCommand.Parameters(0).Value = CType(expense_type,Integer)
+            Me.Adapter.InsertCommand.Parameters(1).Value = CType(expense_value,Decimal)
+            Me.Adapter.InsertCommand.Parameters(2).Value = CType(expense_date,Date)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+        Public Overloads Overridable Function Update(ByVal expense_type As Integer, ByVal expense_value As Decimal, ByVal expense_date As Date, ByVal Original_expense_id As Integer, ByVal Original_expense_type As Integer, ByVal Original_expense_value As Decimal, ByVal Original_expense_date As Date) As Integer
+            Me.Adapter.UpdateCommand.Parameters(0).Value = CType(expense_type,Integer)
+            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(expense_value,Decimal)
+            Me.Adapter.UpdateCommand.Parameters(2).Value = CType(expense_date,Date)
+            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Original_expense_id,Integer)
+            Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Original_expense_type,Integer)
+            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Original_expense_value,Decimal)
+            Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Original_expense_date,Date)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.UpdateCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.UpdateCommand.Connection.Close
+                End If
+            End Try
+        End Function
+    End Class
+    
+    '''<summary>
+    '''Represents the connection and commands used to retrieve and save data.
+    '''</summary>
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    Partial Public Class loo_expense_typeTableAdapter
+        Inherits Global.System.ComponentModel.Component
+        
+        Private WithEvents _adapter As Global.Devart.Data.MySql.MySqlDataAdapter
+        
+        Private _connection As Global.Devart.Data.MySql.MySqlConnection
+        
+        Private _transaction As Global.System.Data.Common.DbTransaction
+        
+        Private _commandCollection() As Global.Devart.Data.MySql.MySqlCommand
+        
+        Private _clearBeforeFill As Boolean
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.ClearBeforeFill = true
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected Friend ReadOnly Property Adapter() As Global.Devart.Data.MySql.MySqlDataAdapter
+            Get
+                If (Me._adapter Is Nothing) Then
+                    Me.InitAdapter
+                End If
+                Return Me._adapter
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Connection() As Global.Devart.Data.MySql.MySqlConnection
+            Get
+                If (Me._connection Is Nothing) Then
+                    Me.InitConnection
+                End If
+                Return Me._connection
+            End Get
+            Set
+                Me._connection = value
+                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
+                    Me.Adapter.InsertCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
+                    Me.Adapter.DeleteCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
+                    Me.Adapter.UpdateCommand.Connection = value
+                End If
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
+                        CType(Me.CommandCollection(i),Global.Devart.Data.MySql.MySqlCommand).Connection = value
+                    End If
+                    i = (i + 1)
+                Loop
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Friend Property Transaction() As Global.System.Data.Common.DbTransaction
+            Get
+                Return Me._transaction
+            End Get
+            Set
+                Me._transaction = value
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    Me.CommandCollection(i).Transaction = Me._transaction
+                    i = (i + 1)
+                Loop
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
+                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
+                    Me.Adapter.InsertCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
+                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
+                End If
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Protected ReadOnly Property CommandCollection() As Global.Devart.Data.MySql.MySqlCommand()
+            Get
+                If (Me._commandCollection Is Nothing) Then
+                    Me.InitCommandCollection
+                End If
+                Return Me._commandCollection
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property ClearBeforeFill() As Boolean
+            Get
+                Return Me._clearBeforeFill
+            End Get
+            Set
+                Me._clearBeforeFill = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitAdapter()
+            Me._adapter = New Global.Devart.Data.MySql.MySqlDataAdapter()
+            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
+            tableMapping.SourceTable = "Table"
+            tableMapping.DataSetTable = "loo_expense_type"
+            tableMapping.ColumnMappings.Add("expense_type_id", "expense_type_id")
+            tableMapping.ColumnMappings.Add("expense_type_name", "expense_type_name")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.Devart.Data.MySql.MySqlCommand()
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `ncc_2015`.`loo_expense_type` WHERE ((`expense_type_id` = :Original_e"& _ 
+                "xpense_type_id) AND (`expense_type_name` = :Original_expense_type_name))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Dim param As Global.Devart.Data.MySql.MySqlParameter = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_expense_type_id"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "expense_type_id"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_expense_type_name"
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "expense_type_name"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.DeleteCommand.Parameters.Add(param)
+            Me._adapter.InsertCommand = New Global.Devart.Data.MySql.MySqlCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `ncc_2015`.`loo_expense_type` (`expense_type_name`) VALUES (:expense_"& _ 
+                "type_name)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "expense_type_name"
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "expense_type_name"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            Me._adapter.UpdateCommand = New Global.Devart.Data.MySql.MySqlCommand()
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `ncc_2015`.`loo_expense_type` SET `expense_type_name` = :expense_type_name"& _ 
+                " WHERE ((`expense_type_id` = :Original_expense_type_id) AND (`expense_type_name`"& _ 
+                " = :Original_expense_type_name))"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "expense_type_name"
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "expense_type_name"
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_expense_type_id"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.Int
+            param.IsNullable = true
+            param.SourceColumn = "expense_type_id"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+            param = New Global.Devart.Data.MySql.MySqlParameter()
+            param.ParameterName = "Original_expense_type_name"
+            param.MySqlType = Global.Devart.Data.MySql.MySqlType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "expense_type_name"
+            param.SourceVersion = Global.System.Data.DataRowVersion.Original
+            Me._adapter.UpdateCommand.Parameters.Add(param)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitConnection()
+            Me._connection = New Global.Devart.Data.MySql.MySqlConnection()
+            Me._connection.ConnectionString = Global.NCC2015.My.MySettings.Default.ncc_cs
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Private Sub InitCommandCollection()
+            Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(0) {}
+            Me._commandCollection(0) = New Global.Devart.Data.MySql.MySqlCommand()
+            Me._commandCollection(0).Connection = Me.Connection
+            Me._commandCollection(0).CommandText = "SELECT expense_type_id, expense_type_name FROM ncc_2015.loo_expense_type"
+            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+        Public Overloads Overridable Function Fill(ByVal dataTable As ncc_2015DataSet.loo_expense_typeDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+        Public Overloads Overridable Function GetData() As ncc_2015DataSet.loo_expense_typeDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As ncc_2015DataSet.loo_expense_typeDataTable = New ncc_2015DataSet.loo_expense_typeDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataTable As ncc_2015DataSet.loo_expense_typeDataTable) As Integer
+            Return Me.Adapter.Update(dataTable)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataSet As ncc_2015DataSet) As Integer
+            Return Me.Adapter.Update(dataSet, "loo_expense_type")
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(dataRows)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
+        Public Overloads Overridable Function Delete(ByVal Original_expense_type_id As Integer, ByVal Original_expense_type_name As String) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_expense_type_id,Integer)
+            If (Original_expense_type_name Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_expense_type_name")
+            Else
+                Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_expense_type_name,String)
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.DeleteCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.DeleteCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+        Public Overloads Overridable Function Insert(ByVal expense_type_name As String) As Integer
+            If (expense_type_name Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("expense_type_name")
+            Else
+                Me.Adapter.InsertCommand.Parameters(0).Value = CType(expense_type_name,String)
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+        Public Overloads Overridable Function Update(ByVal expense_type_name As String, ByVal Original_expense_type_id As Integer, ByVal Original_expense_type_name As String) As Integer
+            If (expense_type_name Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("expense_type_name")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(0).Value = CType(expense_type_name,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(1).Value = CType(Original_expense_type_id,Integer)
+            If (Original_expense_type_name Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_expense_type_name")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(Original_expense_type_name,String)
+            End If
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.UpdateCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.UpdateCommand.Connection.Close
+                End If
+            End Try
+        End Function
+    End Class
+    
+    '''<summary>
     '''TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     '''</summary>
     <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
@@ -12064,6 +14696,12 @@ Namespace ncc_2015DataSetTableAdapters
         Private _loo_userTableAdapter As loo_userTableAdapter
         
         Private _loo_sysTableAdapter As loo_sysTableAdapter
+        
+        Private _loo_paymentTableAdapter As loo_paymentTableAdapter
+        
+        Private _loo_expenseTableAdapter As loo_expenseTableAdapter
+        
+        Private _loo_expense_typeTableAdapter As loo_expense_typeTableAdapter
         
         Private _backupDataSetBeforeUpdate As Boolean
         
@@ -12179,6 +14817,48 @@ Namespace ncc_2015DataSetTableAdapters
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso"& _ 
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3"& _ 
+            "a", "System.Drawing.Design.UITypeEditor")>  _
+        Public Property loo_paymentTableAdapter() As loo_paymentTableAdapter
+            Get
+                Return Me._loo_paymentTableAdapter
+            End Get
+            Set
+                Me._loo_paymentTableAdapter = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso"& _ 
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3"& _ 
+            "a", "System.Drawing.Design.UITypeEditor")>  _
+        Public Property loo_expenseTableAdapter() As loo_expenseTableAdapter
+            Get
+                Return Me._loo_expenseTableAdapter
+            End Get
+            Set
+                Me._loo_expenseTableAdapter = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
+         Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso"& _ 
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3"& _ 
+            "a", "System.Drawing.Design.UITypeEditor")>  _
+        Public Property loo_expense_typeTableAdapter() As loo_expense_typeTableAdapter
+            Get
+                Return Me._loo_expense_typeTableAdapter
+            End Get
+            Set
+                Me._loo_expense_typeTableAdapter = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property BackupDataSetBeforeUpdate() As Boolean
             Get
@@ -12225,6 +14905,18 @@ Namespace ncc_2015DataSetTableAdapters
                             AndAlso (Not (Me._loo_sysTableAdapter.Connection) Is Nothing)) Then
                     Return Me._loo_sysTableAdapter.Connection
                 End If
+                If ((Not (Me._loo_paymentTableAdapter) Is Nothing)  _
+                            AndAlso (Not (Me._loo_paymentTableAdapter.Connection) Is Nothing)) Then
+                    Return Me._loo_paymentTableAdapter.Connection
+                End If
+                If ((Not (Me._loo_expenseTableAdapter) Is Nothing)  _
+                            AndAlso (Not (Me._loo_expenseTableAdapter.Connection) Is Nothing)) Then
+                    Return Me._loo_expenseTableAdapter.Connection
+                End If
+                If ((Not (Me._loo_expense_typeTableAdapter) Is Nothing)  _
+                            AndAlso (Not (Me._loo_expense_typeTableAdapter.Connection) Is Nothing)) Then
+                    Return Me._loo_expense_typeTableAdapter.Connection
+                End If
                 Return Nothing
             End Get
             Set
@@ -12259,6 +14951,15 @@ Namespace ncc_2015DataSetTableAdapters
                 If (Not (Me._loo_sysTableAdapter) Is Nothing) Then
                     count = (count + 1)
                 End If
+                If (Not (Me._loo_paymentTableAdapter) Is Nothing) Then
+                    count = (count + 1)
+                End If
+                If (Not (Me._loo_expenseTableAdapter) Is Nothing) Then
+                    count = (count + 1)
+                End If
+                If (Not (Me._loo_expense_typeTableAdapter) Is Nothing) Then
+                    count = (count + 1)
+                End If
                 Return count
             End Get
         End Property
@@ -12276,6 +14977,15 @@ Namespace ncc_2015DataSetTableAdapters
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
                     result = (result + Me._loo_partnerTableAdapter.Update(updatedRows))
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
+            If (Not (Me._loo_expense_typeTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.loo_expense_type.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing)  _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._loo_expense_typeTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -12333,6 +15043,24 @@ Namespace ncc_2015DataSetTableAdapters
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
+            If (Not (Me._loo_paymentTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.loo_payment.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing)  _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._loo_paymentTableAdapter.Update(updatedRows))
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
+            If (Not (Me._loo_expenseTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.loo_expense.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing)  _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._loo_expenseTableAdapter.Update(updatedRows))
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
             Return result
         End Function
         
@@ -12348,6 +15076,14 @@ Namespace ncc_2015DataSetTableAdapters
                 If ((Not (addedRows) Is Nothing)  _
                             AndAlso (0 < addedRows.Length)) Then
                     result = (result + Me._loo_partnerTableAdapter.Update(addedRows))
+                    allAddedRows.AddRange(addedRows)
+                End If
+            End If
+            If (Not (Me._loo_expense_typeTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.loo_expense_type.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing)  _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._loo_expense_typeTableAdapter.Update(addedRows))
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
@@ -12399,6 +15135,22 @@ Namespace ncc_2015DataSetTableAdapters
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
+            If (Not (Me._loo_paymentTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.loo_payment.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing)  _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._loo_paymentTableAdapter.Update(addedRows))
+                    allAddedRows.AddRange(addedRows)
+                End If
+            End If
+            If (Not (Me._loo_expenseTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.loo_expense.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing)  _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._loo_expenseTableAdapter.Update(addedRows))
+                    allAddedRows.AddRange(addedRows)
+                End If
+            End If
             Return result
         End Function
         
@@ -12409,6 +15161,22 @@ Namespace ncc_2015DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Function UpdateDeletedRows(ByVal dataSet As ncc_2015DataSet, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
+            If (Not (Me._loo_expenseTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.loo_expense.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._loo_expenseTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
+            If (Not (Me._loo_paymentTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.loo_payment.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._loo_paymentTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
             If (Not (Me._loo_sysTableAdapter) Is Nothing) Then
                 Dim deletedRows() As Global.System.Data.DataRow = dataSet.loo_sys.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
                 If ((Not (deletedRows) Is Nothing)  _
@@ -12454,6 +15222,14 @@ Namespace ncc_2015DataSetTableAdapters
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
                     result = (result + Me._loo_imageTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
+            If (Not (Me._loo_expense_typeTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.loo_expense_type.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._loo_expense_typeTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
@@ -12538,6 +15314,21 @@ Namespace ncc_2015DataSetTableAdapters
             End If
             If ((Not (Me._loo_sysTableAdapter) Is Nothing)  _
                         AndAlso (Me.MatchTableAdapterConnection(Me._loo_sysTableAdapter.Connection) = false)) Then
+                Throw New Global.System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s"& _ 
+                        "tring.")
+            End If
+            If ((Not (Me._loo_paymentTableAdapter) Is Nothing)  _
+                        AndAlso (Me.MatchTableAdapterConnection(Me._loo_paymentTableAdapter.Connection) = false)) Then
+                Throw New Global.System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s"& _ 
+                        "tring.")
+            End If
+            If ((Not (Me._loo_expenseTableAdapter) Is Nothing)  _
+                        AndAlso (Me.MatchTableAdapterConnection(Me._loo_expenseTableAdapter.Connection) = false)) Then
+                Throw New Global.System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s"& _ 
+                        "tring.")
+            End If
+            If ((Not (Me._loo_expense_typeTableAdapter) Is Nothing)  _
+                        AndAlso (Me.MatchTableAdapterConnection(Me._loo_expense_typeTableAdapter.Connection) = false)) Then
                 Throw New Global.System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s"& _ 
                         "tring.")
             End If
@@ -12636,6 +15427,33 @@ Namespace ncc_2015DataSetTableAdapters
                         adaptersWithAcceptChangesDuringUpdate.Add(Me._loo_sysTableAdapter.Adapter)
                     End If
                 End If
+                If (Not (Me._loo_paymentTableAdapter) Is Nothing) Then
+                    revertConnections.Add(Me._loo_paymentTableAdapter, Me._loo_paymentTableAdapter.Connection)
+                    Me._loo_paymentTableAdapter.Connection = CType(workConnection,Global.Devart.Data.MySql.MySqlConnection)
+                    Me._loo_paymentTableAdapter.Transaction = CType(workTransaction,Global.System.Data.Common.DbTransaction)
+                    If Me._loo_paymentTableAdapter.Adapter.AcceptChangesDuringUpdate Then
+                        Me._loo_paymentTableAdapter.Adapter.AcceptChangesDuringUpdate = false
+                        adaptersWithAcceptChangesDuringUpdate.Add(Me._loo_paymentTableAdapter.Adapter)
+                    End If
+                End If
+                If (Not (Me._loo_expenseTableAdapter) Is Nothing) Then
+                    revertConnections.Add(Me._loo_expenseTableAdapter, Me._loo_expenseTableAdapter.Connection)
+                    Me._loo_expenseTableAdapter.Connection = CType(workConnection,Global.Devart.Data.MySql.MySqlConnection)
+                    Me._loo_expenseTableAdapter.Transaction = CType(workTransaction,Global.System.Data.Common.DbTransaction)
+                    If Me._loo_expenseTableAdapter.Adapter.AcceptChangesDuringUpdate Then
+                        Me._loo_expenseTableAdapter.Adapter.AcceptChangesDuringUpdate = false
+                        adaptersWithAcceptChangesDuringUpdate.Add(Me._loo_expenseTableAdapter.Adapter)
+                    End If
+                End If
+                If (Not (Me._loo_expense_typeTableAdapter) Is Nothing) Then
+                    revertConnections.Add(Me._loo_expense_typeTableAdapter, Me._loo_expense_typeTableAdapter.Connection)
+                    Me._loo_expense_typeTableAdapter.Connection = CType(workConnection,Global.Devart.Data.MySql.MySqlConnection)
+                    Me._loo_expense_typeTableAdapter.Transaction = CType(workTransaction,Global.System.Data.Common.DbTransaction)
+                    If Me._loo_expense_typeTableAdapter.Adapter.AcceptChangesDuringUpdate Then
+                        Me._loo_expense_typeTableAdapter.Adapter.AcceptChangesDuringUpdate = false
+                        adaptersWithAcceptChangesDuringUpdate.Add(Me._loo_expense_typeTableAdapter.Adapter)
+                    End If
+                End If
                 '
                 '---- Perform updates -----------
                 '
@@ -12723,6 +15541,18 @@ Namespace ncc_2015DataSetTableAdapters
                 If (Not (Me._loo_sysTableAdapter) Is Nothing) Then
                     Me._loo_sysTableAdapter.Connection = CType(revertConnections(Me._loo_sysTableAdapter),Global.Devart.Data.MySql.MySqlConnection)
                     Me._loo_sysTableAdapter.Transaction = Nothing
+                End If
+                If (Not (Me._loo_paymentTableAdapter) Is Nothing) Then
+                    Me._loo_paymentTableAdapter.Connection = CType(revertConnections(Me._loo_paymentTableAdapter),Global.Devart.Data.MySql.MySqlConnection)
+                    Me._loo_paymentTableAdapter.Transaction = Nothing
+                End If
+                If (Not (Me._loo_expenseTableAdapter) Is Nothing) Then
+                    Me._loo_expenseTableAdapter.Connection = CType(revertConnections(Me._loo_expenseTableAdapter),Global.Devart.Data.MySql.MySqlConnection)
+                    Me._loo_expenseTableAdapter.Transaction = Nothing
+                End If
+                If (Not (Me._loo_expense_typeTableAdapter) Is Nothing) Then
+                    Me._loo_expense_typeTableAdapter.Connection = CType(revertConnections(Me._loo_expense_typeTableAdapter),Global.Devart.Data.MySql.MySqlConnection)
+                    Me._loo_expense_typeTableAdapter.Transaction = Nothing
                 End If
                 If (0 < adaptersWithAcceptChangesDuringUpdate.Count) Then
                     Dim adapters((adaptersWithAcceptChangesDuringUpdate.Count) - 1) As Global.System.Data.Common.DataAdapter
