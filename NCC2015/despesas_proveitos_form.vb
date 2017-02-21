@@ -1,6 +1,7 @@
 ﻿Public Class despesas_proveitos_form
 
     Dim main As main_form
+    Dim dbm As database_manager = New database_manager
 
 
     Sub New(mf As main_form)
@@ -18,16 +19,9 @@
         main.Show()
     End Sub
 
-    Private Sub Loo_expenseBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
-        Me.Validate()
-        Me.Loo_expenseBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.Ncc_2015DataSet)
-
-    End Sub
-
-    Private Sub despesas_proveitos_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'Ncc_2015DataSet.loo_expense' table. You can move, or remove it, as needed.
-        Me.Loo_expenseTableAdapter.Fill(Me.Ncc_2015DataSet.loo_expense)
-
+    Private Sub despesas_Click(sender As Object, e As EventArgs) Handles despesas.Click
+        Dim df As add_expense = New add_expense(Me)
+        df.Show()
+        Me.Hide()
     End Sub
 End Class

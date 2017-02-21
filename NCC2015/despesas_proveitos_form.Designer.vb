@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class despesas_proveitos_form
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,30 +20,28 @@ Partial Class despesas_proveitos_form
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(despesas_proveitos_form))
         Me.despesas = New System.Windows.Forms.Button()
         Me.despesasQuitBtn = New System.Windows.Forms.Button()
-        Me.Ncc_2015DataSet = New NCC2015.ncc_2015DataSet()
-        Me.Loo_expenseBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Loo_expenseTableAdapter = New NCC2015.ncc_2015DataSetTableAdapters.loo_expenseTableAdapter()
-        Me.TableAdapterManager = New NCC2015.ncc_2015DataSetTableAdapters.TableAdapterManager()
-        Me.Loo_expenseDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        CType(Me.Ncc_2015DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Loo_expenseBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Loo_expenseDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.SuspendLayout()
         '
         'despesas
         '
         Me.despesas.BackColor = System.Drawing.SystemColors.Menu
-        Me.despesas.Image = Global.NCC2015.My.Resources.Resources.Add_List_32
+        Me.despesas.Image = CType(resources.GetObject("despesas.Image"), System.Drawing.Image)
         Me.despesas.Location = New System.Drawing.Point(666, 507)
         Me.despesas.Name = "despesas"
         Me.despesas.Size = New System.Drawing.Size(50, 50)
@@ -53,95 +51,99 @@ Partial Class despesas_proveitos_form
         'despesasQuitBtn
         '
         Me.despesasQuitBtn.BackColor = System.Drawing.SystemColors.Menu
-        Me.despesasQuitBtn.Image = Global.NCC2015.My.Resources.Resources.Close_Window_24
+        Me.despesasQuitBtn.Image = CType(resources.GetObject("despesasQuitBtn.Image"), System.Drawing.Image)
         Me.despesasQuitBtn.Location = New System.Drawing.Point(722, 507)
         Me.despesasQuitBtn.Name = "despesasQuitBtn"
         Me.despesasQuitBtn.Size = New System.Drawing.Size(50, 50)
         Me.despesasQuitBtn.TabIndex = 19
         Me.despesasQuitBtn.UseVisualStyleBackColor = False
         '
-        'Ncc_2015DataSet
+        'BindingNavigatorMoveFirstItem
         '
-        Me.Ncc_2015DataSet.DataSetName = "ncc_2015DataSet"
-        Me.Ncc_2015DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
+        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMoveFirstItem.Text = "Move first"
         '
-        'Loo_expenseBindingSource
+        'BindingNavigatorMovePreviousItem
         '
-        Me.Loo_expenseBindingSource.DataMember = "loo_expense"
-        Me.Loo_expenseBindingSource.DataSource = Me.Ncc_2015DataSet
+        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
+        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
         '
-        'Loo_expenseTableAdapter
+        'BindingNavigatorSeparator
         '
-        Me.Loo_expenseTableAdapter.ClearBeforeFill = True
+        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
         '
-        'TableAdapterManager
+        'BindingNavigatorPositionItem
         '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.loo_expense_typeTableAdapter = Nothing
-        Me.TableAdapterManager.loo_expenseTableAdapter = Me.Loo_expenseTableAdapter
-        Me.TableAdapterManager.loo_imageTableAdapter = Nothing
-        Me.TableAdapterManager.loo_medicTableAdapter = Nothing
-        Me.TableAdapterManager.loo_partner_classTableAdapter = Nothing
-        Me.TableAdapterManager.loo_partner_timetableTableAdapter = Nothing
-        Me.TableAdapterManager.loo_partnerTableAdapter = Nothing
-        Me.TableAdapterManager.loo_paymentTableAdapter = Nothing
-        Me.TableAdapterManager.loo_sysTableAdapter = Nothing
-        Me.TableAdapterManager.loo_userTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = NCC2015.ncc_2015DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.BindingNavigatorPositionItem.AccessibleName = "Position"
+        Me.BindingNavigatorPositionItem.AutoSize = False
+        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
+        Me.BindingNavigatorPositionItem.Text = "0"
+        Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
-        'Loo_expenseDataGridView
+        'BindingNavigatorCountItem
         '
-        Me.Loo_expenseDataGridView.AllowUserToAddRows = False
-        Me.Loo_expenseDataGridView.AllowUserToDeleteRows = False
-        Me.Loo_expenseDataGridView.AutoGenerateColumns = False
-        Me.Loo_expenseDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.Loo_expenseDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Loo_expenseDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
-        Me.Loo_expenseDataGridView.DataSource = Me.Loo_expenseBindingSource
-        Me.Loo_expenseDataGridView.Location = New System.Drawing.Point(0, 0)
-        Me.Loo_expenseDataGridView.Name = "Loo_expenseDataGridView"
-        Me.Loo_expenseDataGridView.ReadOnly = True
-        Me.Loo_expenseDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
-        Me.Loo_expenseDataGridView.Size = New System.Drawing.Size(792, 493)
-        Me.Loo_expenseDataGridView.TabIndex = 21
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 15)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
-        'DataGridViewTextBoxColumn1
+        'BindingNavigatorSeparator1
         '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "expense_id"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "expense_id"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        Me.DataGridViewTextBoxColumn1.Visible = False
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
         '
-        'DataGridViewTextBoxColumn2
+        'BindingNavigatorMoveNextItem
         '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "expense_type"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Tipo de Despesa"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
+        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveNextItem.Text = "Move next"
         '
-        'DataGridViewTextBoxColumn3
+        'BindingNavigatorMoveLastItem
         '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "expense_value"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Valor"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
+        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveLastItem.Text = "Move last"
         '
-        'DataGridViewTextBoxColumn4
+        'BindingNavigatorSeparator2
         '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "expense_date"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Data"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
+        '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'despesas_proveitos_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.ClientSize = New System.Drawing.Size(792, 569)
+        Me.ClientSize = New System.Drawing.Size(792, 577)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Loo_expenseDataGridView)
         Me.Controls.Add(Me.despesas)
         Me.Controls.Add(Me.despesasQuitBtn)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -149,22 +151,21 @@ Partial Class despesas_proveitos_form
         Me.Name = "despesas_proveitos_form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Loomart - SocGest | Despesas e Proveitos"
-        CType(Me.Ncc_2015DataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Loo_expenseBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Loo_expenseDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents despesasQuitBtn As Button
     Friend WithEvents despesas As Button
-    Friend WithEvents Ncc_2015DataSet As ncc_2015DataSet
-    Friend WithEvents Loo_expenseBindingSource As BindingSource
-    Friend WithEvents Loo_expenseTableAdapter As ncc_2015DataSetTableAdapters.loo_expenseTableAdapter
-    Friend WithEvents TableAdapterManager As ncc_2015DataSetTableAdapters.TableAdapterManager
-    Friend WithEvents Loo_expenseDataGridView As DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents BindingNavigatorAddNewItem As ToolStripButton
+    Friend WithEvents BindingNavigatorCountItem As ToolStripLabel
+    Friend WithEvents BindingNavigatorDeleteItem As ToolStripButton
+    Friend WithEvents BindingNavigatorMoveFirstItem As ToolStripButton
+    Friend WithEvents BindingNavigatorMovePreviousItem As ToolStripButton
+    Friend WithEvents BindingNavigatorSeparator As ToolStripSeparator
+    Friend WithEvents BindingNavigatorPositionItem As ToolStripTextBox
+    Friend WithEvents BindingNavigatorSeparator1 As ToolStripSeparator
+    Friend WithEvents BindingNavigatorMoveNextItem As ToolStripButton
+    Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
+    Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
 End Class

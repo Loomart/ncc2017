@@ -882,4 +882,33 @@ Public Class database_manager
         Return result
     End Function
 
+
+    '***********************
+    '**EXPENSES OPERATIONS**
+    '***********************
+
+    Public Sub insertExpense(expense_value As Double, expense_type As Int16, expense_date As Date)
+        Dim result As New Boolean
+        Using conn
+            Dim cmd As New MySqlCommand()
+            Try
+                conn.Open()
+                cmd.Connection = conn
+                cmd.CommandText = "create_expense"
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.Parameters.AddWithValue("expense_type", expense_type)
+                cmd.Parameters.AddWithValue("expense_value", expense_value)
+                cmd.Parameters.AddWithValue("expense_date", expense_date)
+                cmd.Parameters("expense_type").Direction = ParameterDirection.Input
+                cmd.Parameters("expense_value").Direction = ParameterDirection.Input
+                cmd.Parameters("expense_date").Direction = ParameterDirection.Input
+                cmd.ExecuteNonQueryAsync()
+            Catch ex As MySqlException
+                Console.WriteLine(("Error " & ex.Number & " has occurred: ") + ex.Message)
+            Finally
+                conn.Close()
+            End Try
+        End Using
+    End Sub
+
 End Class

@@ -397,6 +397,11 @@ Represents the strongly named DataTable class.
 Represents the strongly named DataTable class.
 </summary>
 </member>
+<member name="T:NCC2015.ncc_2015DataSet.expenseDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
 <member name="T:NCC2015.ncc_2015DataSet.loo_imageRow">
 <summary>
 Represents strongly named DataRow class.
@@ -458,6 +463,11 @@ Represents strongly named DataRow class.
 </summary>
 </member>
 <member name="T:NCC2015.ncc_2015DataSet.loo_expense_typeRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSet.expenseRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
@@ -527,6 +537,11 @@ Row event argument class
 Row event argument class
 </summary>
 </member>
+<member name="T:NCC2015.ncc_2015DataSet.expenseRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
 <member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_imageTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
@@ -588,6 +603,11 @@ Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
 <member name="T:NCC2015.ncc_2015DataSetTableAdapters.loo_expense_typeTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:NCC2015.ncc_2015DataSetTableAdapters.expenseTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>

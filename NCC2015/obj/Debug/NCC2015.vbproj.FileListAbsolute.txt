@@ -297,17 +297,13 @@ C:\Users\luisf\Desktop\GitHub\ncc\NCC2015\obj\Debug\RdlCompile.compiled
 C:\Users\luisf\Desktop\GitHub\ncc\NCC2015\obj\Debug\NCC2015.exe.manifest
 C:\Users\luisf\Desktop\GitHub\ncc\NCC2015\obj\Debug\NCC2015.application
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\bin\Debug\NCC2015.exe.config
-C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.exe
-C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.xml
-C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.pdb
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\bin\Debug\NCC2015.exe.manifest
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\bin\Debug\NCC2015.application
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\bin\Debug\NCC2015.exe
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\bin\Debug\NCC2015.pdb
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\bin\Debug\NCC2015.xml
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\bin\Debug\Microsoft.ReportViewer.WinForms.dll
-C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\bin\Debug\Devart.Data.MySql.xml
-C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.vbprojResolveAssemblyReference.cache
+C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.add_expense.resources
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.add_timetable.resources
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.class_list.resources
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.configCard.resources
@@ -331,3 +327,6 @@ C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\RdlCompile.cache
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\RdlCompile.compiled
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.exe.manifest
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.application
+C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.exe
+C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.xml
+C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.pdb
