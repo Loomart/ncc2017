@@ -147,6 +147,7 @@ Partial Class configCard
         Me.Controls.Add(Me.cfgQuitBtn)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "configCard"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Loomart - SocGest | Configurar Cartao"
         Me.ResumeLayout(False)
         Me.PerformLayout()

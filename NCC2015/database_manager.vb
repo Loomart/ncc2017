@@ -903,11 +903,35 @@ Public Class database_manager
                 cmd.Parameters("expense_value").Direction = ParameterDirection.Input
                 cmd.Parameters("expense_date").Direction = ParameterDirection.Input
                 cmd.ExecuteNonQueryAsync()
+                MsgBox("Despesa criada com sucesso.")
             Catch ex As MySqlException
                 Console.WriteLine(("Error " & ex.Number & " has occurred: ") + ex.Message)
+                MsgBox("Despesa não criada. Reporte ao seu Administrador.")
             Finally
                 conn.Close()
             End Try
+        End Using
+    End Sub
+
+    Sub deleteExpense(expenseId As Integer)
+        Using conn
+            Dim cmd As New MySqlCommand
+            If (expenseId > 0) Then
+                cmd = New MySqlCommand("DELETE FROM `ncc_2015`.`loo_expense` WHERE expense_id = @expense_id;", conn)
+                cmd.Parameters.AddWithValue("@expense_id", expenseId)
+                Try
+                    conn.Open()
+                    cmd.ExecuteNonQuery()
+                    MsgBox("Despesa Removida com sucesso.")
+                Catch ex As Exception
+                    MsgBox("Problema ao remover despesa.")
+                Finally
+                    conn.Close()
+                    conn.Dispose()
+                End Try
+            Else
+                MsgBox("Não pode remover despesa vazia.")
+            End If
         End Using
     End Sub
 

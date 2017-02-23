@@ -21,6 +21,8 @@
 
     Private Sub addExpense_Click(sender As Object, e As EventArgs) Handles addExpense.Click
         dbm.insertExpense(addExpenseValueTxt.Text, addExpenseTypeCmb.SelectedValue, addExpenseDatePck.Value)
+        Me.Close()
+        expenses_form.show
     End Sub
 
     Private Sub addExpenseValueTxt_KeyPress(sender As Object, e As KeyPressEventArgs) Handles addExpenseValueTxt.KeyPress

@@ -22,6 +22,7 @@ Partial Class despesas_proveitos_form
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(despesas_proveitos_form))
         Me.despesas = New System.Windows.Forms.Button()
         Me.despesasQuitBtn = New System.Windows.Forms.Button()
@@ -36,6 +37,19 @@ Partial Class despesas_proveitos_form
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
+        Me.ExpenseDataGridView = New System.Windows.Forms.DataGridView()
+        Me.expenseDeleteBtn = New System.Windows.Forms.Button()
+        Me.ExpenseBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Ncc_2015DataSet = New NCC2015.ncc_2015DataSet()
+        Me.ExpenseTableAdapter = New NCC2015.ncc_2015DataSetTableAdapters.expenseTableAdapter()
+        Me.TableAdapterManager = New NCC2015.ncc_2015DataSetTableAdapters.TableAdapterManager()
+        Me.expense_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.ExpenseDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ExpenseBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Ncc_2015DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'despesas
@@ -137,6 +151,90 @@ Partial Class despesas_proveitos_form
         Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 20)
         Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
+        'ExpenseDataGridView
+        '
+        Me.ExpenseDataGridView.AllowUserToAddRows = False
+        Me.ExpenseDataGridView.AllowUserToDeleteRows = False
+        Me.ExpenseDataGridView.AutoGenerateColumns = False
+        Me.ExpenseDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.ExpenseDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ExpenseDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.expense_id, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
+        Me.ExpenseDataGridView.DataSource = Me.ExpenseBindingSource
+        Me.ExpenseDataGridView.Location = New System.Drawing.Point(1, 1)
+        Me.ExpenseDataGridView.Name = "ExpenseDataGridView"
+        Me.ExpenseDataGridView.ReadOnly = True
+        Me.ExpenseDataGridView.Size = New System.Drawing.Size(791, 500)
+        Me.ExpenseDataGridView.TabIndex = 21
+        '
+        'expenseDeleteBtn
+        '
+        Me.expenseDeleteBtn.BackColor = System.Drawing.SystemColors.Menu
+        Me.expenseDeleteBtn.Image = Global.NCC2015.My.Resources.Resources.Delete_24
+        Me.expenseDeleteBtn.Location = New System.Drawing.Point(610, 507)
+        Me.expenseDeleteBtn.Name = "expenseDeleteBtn"
+        Me.expenseDeleteBtn.Size = New System.Drawing.Size(50, 50)
+        Me.expenseDeleteBtn.TabIndex = 22
+        Me.expenseDeleteBtn.UseVisualStyleBackColor = False
+        '
+        'ExpenseBindingSource
+        '
+        Me.ExpenseBindingSource.DataMember = "expense"
+        Me.ExpenseBindingSource.DataSource = Me.Ncc_2015DataSet
+        '
+        'Ncc_2015DataSet
+        '
+        Me.Ncc_2015DataSet.DataSetName = "ncc_2015DataSet"
+        Me.Ncc_2015DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ExpenseTableAdapter
+        '
+        Me.ExpenseTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.Connection = Nothing
+        Me.TableAdapterManager.loo_expense_typeTableAdapter = Nothing
+        Me.TableAdapterManager.loo_expenseTableAdapter = Nothing
+        Me.TableAdapterManager.loo_imageTableAdapter = Nothing
+        Me.TableAdapterManager.loo_medicTableAdapter = Nothing
+        Me.TableAdapterManager.loo_partner_classTableAdapter = Nothing
+        Me.TableAdapterManager.loo_partner_timetableTableAdapter = Nothing
+        Me.TableAdapterManager.loo_partnerTableAdapter = Nothing
+        Me.TableAdapterManager.loo_paymentTableAdapter = Nothing
+        Me.TableAdapterManager.loo_sysTableAdapter = Nothing
+        Me.TableAdapterManager.loo_userTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = NCC2015.ncc_2015DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'expense_id
+        '
+        Me.expense_id.DataPropertyName = "expense_id"
+        Me.expense_id.HeaderText = "expense_id"
+        Me.expense_id.Name = "expense_id"
+        Me.expense_id.ReadOnly = True
+        Me.expense_id.Visible = False
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "expense_type_name"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Tipo"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "expense_value"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Valor"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "expense_date"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Data"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        '
         'despesas_proveitos_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -144,6 +242,8 @@ Partial Class despesas_proveitos_form
         Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ClientSize = New System.Drawing.Size(792, 577)
         Me.ControlBox = False
+        Me.Controls.Add(Me.expenseDeleteBtn)
+        Me.Controls.Add(Me.ExpenseDataGridView)
         Me.Controls.Add(Me.despesas)
         Me.Controls.Add(Me.despesasQuitBtn)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -151,6 +251,9 @@ Partial Class despesas_proveitos_form
         Me.Name = "despesas_proveitos_form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Loomart - SocGest | Despesas e Proveitos"
+        CType(Me.ExpenseDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ExpenseBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Ncc_2015DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -168,4 +271,14 @@ Partial Class despesas_proveitos_form
     Friend WithEvents BindingNavigatorMoveNextItem As ToolStripButton
     Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
     Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
+    Friend WithEvents Ncc_2015DataSet As ncc_2015DataSet
+    Friend WithEvents ExpenseBindingSource As BindingSource
+    Friend WithEvents ExpenseTableAdapter As ncc_2015DataSetTableAdapters.expenseTableAdapter
+    Friend WithEvents TableAdapterManager As ncc_2015DataSetTableAdapters.TableAdapterManager
+    Friend WithEvents ExpenseDataGridView As DataGridView
+    Friend WithEvents expenseDeleteBtn As Button
+    Friend WithEvents expense_id As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
 End Class

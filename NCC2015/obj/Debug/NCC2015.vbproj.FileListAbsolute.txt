@@ -330,3 +330,4 @@ C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.application
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.exe
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.xml
 C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.pdb
+C:\Users\luisf\Desktop\GitHub\ncc2017\NCC2015\obj\Debug\NCC2015.vbprojResolveAssemblyReference.cache

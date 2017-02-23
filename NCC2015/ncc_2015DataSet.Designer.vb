@@ -5244,6 +5244,8 @@ Partial Public Class ncc_2015DataSet
         
         Private columnexpense_date As Global.System.Data.DataColumn
         
+        Private columnexpense_id As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub New()
@@ -5304,6 +5306,14 @@ Partial Public Class ncc_2015DataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property expense_idColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnexpense_id
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -5342,7 +5352,7 @@ Partial Public Class ncc_2015DataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Overloads Function AddexpenseRow(ByVal expense_type_name As String, ByVal expense_value As Decimal, ByVal expense_date As Date) As expenseRow
             Dim rowexpenseRow As expenseRow = CType(Me.NewRow,expenseRow)
-            Dim columnValuesArray() As Object = New Object() {expense_type_name, expense_value, expense_date}
+            Dim columnValuesArray() As Object = New Object() {expense_type_name, expense_value, expense_date, Nothing}
             rowexpenseRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowexpenseRow)
             Return rowexpenseRow
@@ -5368,6 +5378,7 @@ Partial Public Class ncc_2015DataSet
             Me.columnexpense_type_name = MyBase.Columns("expense_type_name")
             Me.columnexpense_value = MyBase.Columns("expense_value")
             Me.columnexpense_date = MyBase.Columns("expense_date")
+            Me.columnexpense_id = MyBase.Columns("expense_id")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -5379,9 +5390,14 @@ Partial Public Class ncc_2015DataSet
             MyBase.Columns.Add(Me.columnexpense_value)
             Me.columnexpense_date = New Global.System.Data.DataColumn("expense_date", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnexpense_date)
-            Me.columnexpense_type_name.AllowDBNull = false
+            Me.columnexpense_id = New Global.System.Data.DataColumn("expense_id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnexpense_id)
             Me.columnexpense_value.AllowDBNull = false
             Me.columnexpense_date.AllowDBNull = false
+            Me.columnexpense_id.AutoIncrement = true
+            Me.columnexpense_id.AutoIncrementSeed = -1
+            Me.columnexpense_id.AutoIncrementStep = -1
+            Me.columnexpense_id.AllowDBNull = false
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -7990,7 +8006,11 @@ Partial Public Class ncc_2015DataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property expense_type_name() As String
             Get
-                Return CType(Me(Me.tableexpense.expense_type_nameColumn),String)
+                Try 
+                    Return CType(Me(Me.tableexpense.expense_type_nameColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'expense_type_name' in table 'expense' is DBNull.", e)
+                End Try
             End Get
             Set
                 Me(Me.tableexpense.expense_type_nameColumn) = value
@@ -8018,6 +8038,29 @@ Partial Public Class ncc_2015DataSet
                 Me(Me.tableexpense.expense_dateColumn) = value
             End Set
         End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property expense_id() As Integer
+            Get
+                Return CType(Me(Me.tableexpense.expense_idColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableexpense.expense_idColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function Isexpense_type_nameNull() As Boolean
+            Return Me.IsNull(Me.tableexpense.expense_type_nameColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub Setexpense_type_nameNull()
+            Me(Me.tableexpense.expense_type_nameColumn) = Global.System.Convert.DBNull
+        End Sub
     End Class
     
     '''<summary>
@@ -15201,6 +15244,7 @@ Namespace ncc_2015DataSetTableAdapters
             tableMapping.ColumnMappings.Add("expense_type_name", "expense_type_name")
             tableMapping.ColumnMappings.Add("expense_value", "expense_value")
             tableMapping.ColumnMappings.Add("expense_date", "expense_date")
+            tableMapping.ColumnMappings.Add("expense_id", "expense_id")
             Me._adapter.TableMappings.Add(tableMapping)
         End Sub
         
@@ -15217,10 +15261,10 @@ Namespace ncc_2015DataSetTableAdapters
             Me._commandCollection = New Global.Devart.Data.MySql.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.Devart.Data.MySql.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT        loo_expense_type.expense_type_name, loo_expense.expense_value, loo_"& _ 
-                "expense.expense_date"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            loo_expense INNER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                  "& _ 
-                "       loo_expense_type ON loo_expense.expense_id = loo_expense_type.expense_typ"& _ 
-                "e_id"
+            Me._commandCollection(0).CommandText = "SELECT        loo_expense.expense_id, loo_expense_type.expense_type_name, loo_exp"& _ 
+                "ense.expense_value, loo_expense.expense_date"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            loo_expense LEFT O"& _ 
+                "UTER JOIN"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"                         loo_expense_type ON loo_expense.expense_type"& _ 
+                " = loo_expense_type.expense_type_id"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
