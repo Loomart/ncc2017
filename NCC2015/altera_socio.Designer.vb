@@ -299,7 +299,7 @@ Partial Class altera_socio_form
         '
         Me.partnerModifyNifLbl.AutoSize = True
         Me.partnerModifyNifLbl.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.partnerModifyNifLbl.Location = New System.Drawing.Point(105, 504)
+        Me.partnerModifyNifLbl.Location = New System.Drawing.Point(123, 504)
         Me.partnerModifyNifLbl.Name = "partnerModifyNifLbl"
         Me.partnerModifyNifLbl.Size = New System.Drawing.Size(31, 16)
         Me.partnerModifyNifLbl.TabIndex = 9
