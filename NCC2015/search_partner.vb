@@ -13,11 +13,14 @@
     End Sub
 
     Private Sub searchBtn_Click(sender As Object, e As EventArgs) Handles searchBtn.Click
+        Dim partner As partner = Nothing
         If searchPartnerTxt.Text = "" Then
             MsgBox("Ha Ha esqueceste-te de preencher o número !")
         Else
             If dbm.existsPartner(Integer.Parse(searchPartnerTxt.Text)) Then
-                alter_partner_form.loadPartner(dbm.getPartner(Integer.Parse(searchPartnerTxt.Text)))
+                partner = dbm.getPartner(Integer.Parse(searchPartnerTxt.Text))
+                alter_partner_form.loadPartner(partner)
+                alter_partner_form.partnerImageId = partner.partnerImageId
                 alter_partner_form.Show()
                 Me.Close()
             Else

@@ -111,14 +111,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NCC2015.exe" size="7910912">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NCC2015.exe" size="7909376">
       <assemblyIdentity name="NCC2015" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>raBNxKzy0tZB2IPxHfW2sCGB3qXBxihg9fzVzH2bvKI=</dsig:DigestValue>
+        <dsig:DigestValue>h52GVVlVMEorat56UHbAANZcxUSQJ5lvSSUzw9CwfaE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -6,7 +6,15 @@ Public Class altera_socio_form
     Dim main As Windows.Forms.Form
     Dim cc As New configCard
     Dim partner As New partner
-    Dim saveImage As Boolean = False
+    Public partnerImageId As Int32 = 0
+    Public Property partner_image_id() As Int32
+        Get
+            Return partnerImageId
+        End Get
+        Set(ByVal value As Int32)
+            partnerImageId = value
+        End Set
+    End Property
     Dim filepath As String = ""
     Dim fileExtension As String = ""
 
@@ -33,8 +41,8 @@ Public Class altera_socio_form
             filepath = openImageDialog.FileName
             fileExtension = System.IO.Path.GetExtension(filepath)
             'Create a new Bitmap and display it
-            partnerModifyImageBox.Image = System.Drawing.Bitmap.FromFile(filePath)
-            saveImage = True
+            partnerModifyImageBox.Image = System.Drawing.Bitmap.FromFile(filepath)
+            partnerImageId = dataBaseConn.saveImage(filepath, fileExtension)
         End If
     End Sub
 
@@ -81,11 +89,9 @@ Public Class altera_socio_form
         If partnerSon IsNot Nothing Then
             partner.partnerParent = partnerSon.partnerNumber
         End If
+        partner.partnerImageId = partnerImageId
 
         Try
-            If saveImage Then
-                partner.partnerImageId = dataBaseConn.saveImage(filepath, fileExtension)
-            End If
             partner.update()
             MsgBox("Sócio atualizado com sucesso.")
         Catch ex As Exception
@@ -151,6 +157,7 @@ Public Class altera_socio_form
         If lastPartnerId > 0 Then
             partner = dataBaseConn.getPartner(lastPartnerId)
             loadPartner(partner)
+            partnerImageId = partner.partnerImageId
         Else
             Me.Dispose()
         End If
